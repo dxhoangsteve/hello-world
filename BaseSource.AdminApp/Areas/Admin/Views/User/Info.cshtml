@@ -1,0 +1,87 @@
+﻿@model UserAdminInfoDto
+@{
+    ViewData["Title"] = "User info";
+}
+
+<div class="row">
+    <div class="col-md-3">
+
+        <div class="card mb-4">
+            <div class="card-body">
+                @*  <div class="text-center">
+                <img class="profile-user-img img-fluid img-circle" src="../../dist/img/user4-128x128.jpg" alt="User profile picture" />
+                </div> *@
+                <h3 class="profile-username text-center">@Model.UserName</h3>
+                <p class="text-muted text-center">@Model.JoinedDate.ToString("dd/MM/yyyy HH:mm:ss")</p>
+
+                <ul class="list-group list-group-unbordered mb-3">
+                    <li class="list-group-item"><b>Tên đăng nhập</b> <span>@Model.UserName</span></li>
+                </ul>
+
+            </div>
+        </div>
+        <div class="card mb-4">
+            <div class="card-header">
+                Quản lý
+            </div>
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-md-12">
+                        <button type="button" class="btn btn-danger btn-sm w-100 mb-2" data-bs-toggle="modal" data-bs-target="#LoginInfoModal">
+                            Thông tin đăng nhập
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="col-md-9">
+        <div class="card">
+            <div class="card-header d-flex justify-content-between align-items-center">
+                Thông tin cá nhân của @Model.UserName
+                <a class="gap-2 btn btn-sm btn-secondary shadow-sm" asp-action="Index"><i class="fas fa-arrow-left fa-fw fa-sm text-white-50"></i> Back</a>
+            </div>
+
+            <div class="card-body">
+                @await Html.PartialAsync("_Edit", new EditUserAdminVm()
+           {
+               Id = Model.Id,
+               CustomId = Model.CustomId,
+               Email = Model.Email,
+               UserName = Model.UserName,
+               PhoneNumber = Model.Phone,
+               FirstName = Model.FirstName,
+               LastName = Model.LastName
+           })
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<div class="modal fade" id="LoginInfoModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Thông tin đăng nhập</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <ul class="list-group list-group-unbordered mb-3">
+                    <li class="list-group-item"><b>Tên đăng nhập</b> <a class="float-right">@Model.UserName</a></li>
+                    <li class="list-group-item"><b>Mật khẩu</b> <a class="float-right">@Model.PasswordText</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        $(".user-nav").addClass("active");
+    </script>
+}

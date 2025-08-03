@@ -1,0 +1,77 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>@ViewData["Title"] - Admin</title>
+    <link href="~/admin/css/styles.css" rel="stylesheet" />
+    <link href="~/admin/css/color.css" rel="stylesheet" />
+
+    <link href="~/admin/libs/fontawesome-pro-6.5.1-web/css/all.min.css" rel="stylesheet" />
+    <link href="~/lib/toastr/toastr.min.css" rel="stylesheet" />
+    <link href="~/lib/bootstrap-select/css/bootstrap-select.min.css" rel="stylesheet" />
+    <link href="~/admin/libs/jquery-ui/jquery-ui.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+
+    <link href="~/lib/dropzone/dropzone.min.css" rel="stylesheet" />
+    <link href="~/admin/libs/magnific-popup/magnific-popup.css" rel="stylesheet" />
+
+    <link href="~/admin/css/site.css" rel="stylesheet" asp-append-version="true" />
+    @await RenderSectionAsync("Styles", required: false)
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap" rel="stylesheet">
+</head>
+<body class="nav-fixed" id="page-top">
+    <div id="layoutSidenav">
+        <div id="layoutSidenav_nav">
+            @await Html.PartialAsync("_SideBar")
+        </div>
+        <div id="layoutSidenav_content">
+            <nav class="topnav navbar navbar-expand shadow justify-content-between justify-content-sm-start navbar-light bg-white" id="sidenavAccordion">
+                @await Html.PartialAsync("_NavTopbar")
+            </nav>
+            <main class="container-fluid p-4">
+                @RenderBody()
+            </main>
+            @* <footer class="footer-admin mt-auto footer-light">
+                <div class="container-fluid">
+                    <div class="text-center">
+                        <div>© Copyright @DateTime.Now.Year by <a href="/">Kteam.</a> All Rights Reserved.</div>
+                    </div>
+                </div>
+            </footer> *@
+        </div>
+    </div>
+
+    @await Html.PartialAsync("_DetailsModal")
+
+    <script>
+        const URL_API = '@Configuration["BackendApiBaseAddress"]';
+    </script>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/admin/libs/jquery-ui/jquery-ui.js"></script>
+
+    <script src="~/admin/js/scripts.js"></script>
+
+    <script src="~/lib/toastr/toastr.min.js"></script>
+    <script src="~/lib/bootstrap-select/js/bootstrap-select.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+
+    <script src="~/admin/libs/signalr/signalr.min.js"></script>
+    <script src="~/admin/libs/js-cookies/js.cookie.min.js"></script>
+
+    <script src="~/lib/dropzone/dropzone.min.js"></script>
+    <script src="~/admin/libs/magnific-popup/jquery.magnific-popup.min.js"></script>
+
+    <script src="~/admin/js/site.js" asp-append-version="true"></script>
+    <script src="~/admin/js/signalr-common.js"></script>
+
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

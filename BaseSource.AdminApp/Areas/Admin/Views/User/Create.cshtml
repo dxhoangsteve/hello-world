@@ -1,0 +1,87 @@
+﻿@model CreateUserAdminVm
+@{
+    ViewData["Title"] = "Thêm mới user";
+}
+<div>
+    <div class="card shadow h-100">
+        <div class="card-header d-flex justify-content-between align-items-center">
+            <h3 class="m-0 font-weight-bold">@ViewData["Title"]</h3>
+            <a class="gap-2 btn btn-sm btn-secondary shadow-sm" asp-action="Index"><i class="fas fa-arrow-left fa-fw fa-sm text-white-50"></i> Back</a>
+        </div>
+
+        <div class="card-body">
+            <form asp-action="Create" data-name="ajaxForm">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="mb-3">
+                            <label asp-for="CustomId" class="form-label"></label>
+                            <input asp-for="CustomId" class="form-control " />
+                            <span asp-validation-for="CustomId" class="text-danger"></span>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="mb-3">
+                            <label asp-for="UserName" class="form-label"></label>
+                            <input asp-for="UserName" class="form-control " />
+                            <span asp-validation-for="UserName" class="text-danger"></span>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="mb-3">
+                            <label asp-for="Password" class="form-label"></label>
+                            <input asp-for="Password" class="form-control " />
+                            <span asp-validation-for="Password" class="text-danger"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="mb-3">
+                            <label asp-for="LastName" class="form-label"></label>
+                            <input asp-for="LastName" class="form-control " />
+                            <span asp-validation-for="LastName" class="text-danger"></span>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="mb-3">
+                            <label asp-for="FirstName" class="form-label"></label>
+                            <input asp-for="FirstName" class="form-control " />
+                            <span asp-validation-for="FirstName" class="text-danger"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="mb-3">
+                            <label asp-for="Email" class="form-label"></label>
+                            <input asp-for="Email" class="form-control " />
+                            <span asp-validation-for="Email" class="text-danger"></span>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="mb-3">
+                            <label asp-for="PhoneNumber" class="form-label"></label>
+                            <input asp-for="PhoneNumber" class="form-control " />
+                            <span asp-validation-for="PhoneNumber" class="text-danger"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row mt-2">
+                    <div class="col-12">
+                        <button type="submit" class="gap-2 btn btn-primary">Create</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+</div>
+
+@section Scripts{
+    <script>
+        $(".user-nav").addClass("active");
+    </script>
+}   

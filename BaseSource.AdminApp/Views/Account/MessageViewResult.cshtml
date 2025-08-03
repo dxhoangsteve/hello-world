@@ -1,0 +1,20 @@
+﻿@model MessageResult
+@{
+    ViewData["Title"] = Model.Title;
+}
+
+<div class="row justify-content-center align-items-center my-5">
+    <div class="col-md-4">
+        <h3 class="mb-3">@ViewData["Title"]</h3>
+        <p class="mb-3">@Html.Raw(Model.Content)</p>
+
+        <div>
+            <p>
+                Đã có tài khoản? <a href="/Account/Login">Đăng nhập</a>
+            </p>
+            <p>
+                Chưa có tài khoản? <a href="/Account/Register">Đăng ký</a>
+            </p>
+        </div>
+    </div>
+</div>

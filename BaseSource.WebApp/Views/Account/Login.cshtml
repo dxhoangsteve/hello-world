@@ -1,0 +1,52 @@
+﻿@model LoginRequestVm
+@{
+    ViewData["Title"] = "Đăng nhập";
+    Layout = "/Views/Shared/_LayoutLogin.cshtml";
+}
+
+<div class="row justify-content-center align-items-center">
+    <div class="col-lg-6 row justify-content-center">
+        <div class="card common-card p-sm-3">
+            <div class="card-body">
+                <h3 class="text-center mb-3">@ViewData["Title"]</h3>
+
+                <form action="/Account/Login?returnUrl=@ViewBag.ReturnUrl" method="post">
+                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" asp-for="UserName" placeholder="">
+                        <label asp-for="UserName">Username</label>
+                        <span asp-validation-for="UserName" class="text-danger"></span>
+                    </div>
+
+                    <div class="form-floating mb-3">
+                        <input type="password" asp-for="Password" class="form-control" placeholder="">
+                        <label asp-for="Password">Password</label>
+                        <span asp-validation-for="Password" class="text-danger"></span>
+                    </div>
+
+                    <div class="mb-3">
+                        <button type="submit" class="gap-2 btn btn-primary btn-lg w-100">Đăng nhập</button>
+                    </div>
+
+                    <div class="mb-3">
+                        <p class=" d-flex justify-content-end">
+                            <a href="/Account/ForgotPassword">Quên mật khẩu?</a>
+                        </p>
+                        <p class="d-flex justify-content-center">
+                            Chưa có tài khoản? <a href="/Account/Register">Đăng ký</a>
+                        </p>
+                    </div>
+                    @* <div class="mb-3">
+                        <a href="/facebook-login?returnUrl=@ViewBag.ReturnUrl" class="btn btn-primary">Facebook</a>
+                        <a href="/google-login?returnUrl=@ViewBag.ReturnUrl" class="btn btn-danger">Google</a>
+                    </div> *@
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+
+}

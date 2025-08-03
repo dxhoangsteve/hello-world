@@ -1,0 +1,23 @@
+{
+  "openapi": "3.0.4",
+  "info": {
+    "title": "Verified Api",
+    "version": "v1"
+  },
+  "paths": { },
+  "components": {
+    "securitySchemes": {
+      "ApiKey": {
+        "type": "apiKey",
+        "description": "API Key",
+        "name": "ApiKey",
+        "in": "header"
+      }
+    }
+  },
+  "security": [
+    {
+      "ApiKey": [ ]
+    }
+  ]
+}

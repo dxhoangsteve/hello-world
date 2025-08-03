@@ -1,0 +1,17 @@
+D:\CryptoHub\cryptohub\Source\CryptoHub\BaseSource.Shared\bin\Debug\net9.0\BaseSource.Shared.deps.json
+D:\CryptoHub\cryptohub\Source\CryptoHub\BaseSource.Shared\bin\Debug\net9.0\BaseSource.Shared.dll
+D:\CryptoHub\cryptohub\Source\CryptoHub\BaseSource.Shared\bin\Debug\net9.0\BaseSource.Shared.pdb
+D:\CryptoHub\cryptohub\Source\CryptoHub\BaseSource.Shared\bin\Debug\net9.0\Resources.dll
+D:\CryptoHub\cryptohub\Source\CryptoHub\BaseSource.Shared\bin\Debug\net9.0\Resources.pdb
+D:\CryptoHub\cryptohub\Source\CryptoHub\BaseSource.Shared\bin\Debug\net9.0\en\Resources.resources.dll
+D:\CryptoHub\cryptohub\Source\CryptoHub\BaseSource.Shared\obj\Debug\net9.0\BaseSource.Shared.csproj.AssemblyReference.cache
+D:\CryptoHub\cryptohub\Source\CryptoHub\BaseSource.Shared\obj\Debug\net9.0\BaseSource.Shared.GeneratedMSBuildEditorConfig.editorconfig
+D:\CryptoHub\cryptohub\Source\CryptoHub\BaseSource.Shared\obj\Debug\net9.0\BaseSource.Shared.AssemblyInfoInputs.cache
+D:\CryptoHub\cryptohub\Source\CryptoHub\BaseSource.Shared\obj\Debug\net9.0\BaseSource.Shared.AssemblyInfo.cs
+D:\CryptoHub\cryptohub\Source\CryptoHub\BaseSource.Shared\obj\Debug\net9.0\BaseSource.Shared.csproj.CoreCompileInputs.cache
+D:\CryptoHub\cryptohub\Source\CryptoHub\BaseSource.Shared\obj\Debug\net9.0\BaseSource.Shared.sourcelink.json
+D:\CryptoHub\cryptohub\Source\CryptoHub\BaseSource.Shared\obj\Debug\net9.0\BaseSour.7A2E1DAA.Up2Date
+D:\CryptoHub\cryptohub\Source\CryptoHub\BaseSource.Shared\obj\Debug\net9.0\BaseSource.Shared.dll
+D:\CryptoHub\cryptohub\Source\CryptoHub\BaseSource.Shared\obj\Debug\net9.0\refint\BaseSource.Shared.dll
+D:\CryptoHub\cryptohub\Source\CryptoHub\BaseSource.Shared\obj\Debug\net9.0\BaseSource.Shared.pdb
+D:\CryptoHub\cryptohub\Source\CryptoHub\BaseSource.Shared\obj\Debug\net9.0\ref\BaseSource.Shared.dll

@@ -1,0 +1,19 @@
+﻿@using BaseSource.WebApp
+@using BaseSource.WebApp.Models
+@using BaseSource.ViewModels.User
+@using BaseSource.Shared.Constants
+@using BaseSource.Shared.Enums
+@using BaseSource.ViewModels.Common
+@using BaseSource.Utilities.Helper
+@using BaseSource.Utilities.Extensions
+@using BaseSource.ViewModels.Shared
+@using BaseSource.ViewModels.Shared.Account
+
+@using Microsoft.AspNetCore.Http
+@inject IHttpContextAccessor httpContextaccessor
+
+@* config *@
+@using Microsoft.Extensions.Configuration
+@inject IConfiguration Configuration
+
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers

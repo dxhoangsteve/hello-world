@@ -1,0 +1,35 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="coverlet.collector" Version="6.0.2" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.12.0" />
+    <PackageReference Include="xunit" Version="2.9.2" />
+    <PackageReference Include="xunit.runner.visualstudio" Version="2.8.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\BaseSource.AdminApp\BaseSource.AdminApp.csproj" />
+    <ProjectReference Include="..\BaseSource.ApiIntegration\BaseSource.ApiIntegration.csproj" />
+    <ProjectReference Include="..\BaseSource.BackendApi.Services\BaseSource.BackendApi.Services.csproj" />
+    <ProjectReference Include="..\BaseSource.BackendApi\BaseSource.BackendApi.csproj" />
+    <ProjectReference Include="..\BaseSource.Data\BaseSource.Data.csproj" />
+    <ProjectReference Include="..\BaseSource.PermissionBased\BaseSource.PermissionBased.csproj" />
+    <ProjectReference Include="..\BaseSource.Shared\BaseSource.Shared.csproj" />
+    <ProjectReference Include="..\BaseSource.Utilities\BaseSource.Utilities.csproj" />
+    <ProjectReference Include="..\BaseSource.ViewModels\BaseSource.ViewModels.csproj" />
+    <ProjectReference Include="..\BaseSource.WebApp\BaseSource.WebApp.csproj" />
+    <ProjectReference Include="..\Resources\Resources.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Using Include="Xunit" />
+  </ItemGroup>
+
+</Project>

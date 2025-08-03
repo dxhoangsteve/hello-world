@@ -1,0 +1,13 @@
+﻿<!-- Sidenav Toggle Button-->
+<button class="btn btn-icon btn-transparent-dark me-2 ms-2" id="sidebarToggle"><i class="far fa-bars"></i></button>
+<!-- Navbar Brand-->
+<!-- * * Tip * * You can use text or an image for your navbar brand.-->
+<!-- * * * * * * When using an image, we recommend the SVG format.-->
+<!-- * * * * * * Dimensions: Maximum height: 32px, maximum width: 240px-->
+<a class="navbar-brand pe-3 ps-3 ps-lg-2 d-none d-lg-block" href="@Url.Action("Index", "Home")">
+    AUTO BANK
+</a>
+
+<ul class="navbar-nav align-items-center ms-auto">
+    @await Component.InvokeAsync("UserInfoTopBar")
+</ul>

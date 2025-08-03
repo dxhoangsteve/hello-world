@@ -1,0 +1,28 @@
+﻿@using Microsoft.AspNetCore.Http.Extensions
+@{
+    var title = $"{ViewData["Title"]} - {SystemConstants.SiteAuthorName}";
+    var desc = $"{SystemConstants.SiteAuthorName}";
+    var imageUrl = !string.IsNullOrEmpty(ViewData["Image"]?.ToString())
+        ? ViewData["Image"].ToString()
+        : $"{Url.Action("Index", "Home", null, Context.Request.Scheme)}images/og.jpg";
+}
+<title>@title</title>
+
+<link rel="canonical" href="@Context.Request.GetDisplayUrl()">
+<meta name="description" content="@desc">
+<meta name="keywords" content="@title">
+<meta property="og:title" content="@title">
+<meta property="og:site_name" content="@title">
+<meta property="og:description" content="@desc">
+<meta property="og:type" content="website">
+<meta property="og:url" content="@Context.Request.GetDisplayUrl()">
+<meta property="og:image" content="@imageUrl">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="@title">
+<meta name="twitter:description" content="@desc">
+<meta name="twitter:image" content="@imageUrl">
+<meta name="twitter:image:alt" content="@title">
+
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+
+<meta name="robots" content="index, follow">

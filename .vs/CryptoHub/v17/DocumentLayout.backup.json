@@ -1,0 +1,280 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\CryptoHub\\cryptohub\\Source\\CryptoHub\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{18209F4A-0497-4F82-9887-2AF5B5208780}|BaseSource.Test\\BaseSource.Test.csproj|d:\\cryptohub\\cryptohub\\source\\cryptohub\\basesource.test\\webapp\\logintests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{18209F4A-0497-4F82-9887-2AF5B5208780}|BaseSource.Test\\BaseSource.Test.csproj|solutionrelative:basesource.test\\webapp\\logintests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB9CBF6F-AA43-49D7-A100-F5E3CA1A2CA9}|BaseSource.BackendApi.Services\\BaseSource.BackendApi.Services.csproj|d:\\cryptohub\\cryptohub\\source\\cryptohub\\basesource.backendapi.services\\services\\email\\sendemailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CB9CBF6F-AA43-49D7-A100-F5E3CA1A2CA9}|BaseSource.BackendApi.Services\\BaseSource.BackendApi.Services.csproj|solutionrelative:basesource.backendapi.services\\services\\email\\sendemailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB9CBF6F-AA43-49D7-A100-F5E3CA1A2CA9}|BaseSource.BackendApi.Services\\BaseSource.BackendApi.Services.csproj|d:\\cryptohub\\cryptohub\\source\\cryptohub\\basesource.backendapi.services\\services\\email\\isendemailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CB9CBF6F-AA43-49D7-A100-F5E3CA1A2CA9}|BaseSource.BackendApi.Services\\BaseSource.BackendApi.Services.csproj|solutionrelative:basesource.backendapi.services\\services\\email\\isendemailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\CryptoHub\\cryptohub\\Source\\CryptoHub\\BaseSource.WebApp.Tests\\SimpleTests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:BaseSource.WebApp.Tests\\SimpleTests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6582AD33-6C7E-DA13-7E0F-CF66613E9870}|BaseSource.WebApp\\BaseSource.WebApp.csproj|d:\\cryptohub\\cryptohub\\source\\cryptohub\\basesource.webapp\\viewcomponents\\userinfosidebarviewcomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6582AD33-6C7E-DA13-7E0F-CF66613E9870}|BaseSource.WebApp\\BaseSource.WebApp.csproj|solutionrelative:basesource.webapp\\viewcomponents\\userinfosidebarviewcomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{21229A63-E6D4-4161-A24A-8DEFF091A2A2}|BaseSource.BackendApi\\BaseSource.BackendApi.csproj|d:\\cryptohub\\cryptohub\\source\\cryptohub\\basesource.backendapi\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{21229A63-E6D4-4161-A24A-8DEFF091A2A2}|BaseSource.BackendApi\\BaseSource.BackendApi.csproj|solutionrelative:basesource.backendapi\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{21229A63-E6D4-4161-A24A-8DEFF091A2A2}|BaseSource.BackendApi\\BaseSource.BackendApi.csproj|d:\\cryptohub\\cryptohub\\source\\cryptohub\\basesource.backendapi\\appsettings.production.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{21229A63-E6D4-4161-A24A-8DEFF091A2A2}|BaseSource.BackendApi\\BaseSource.BackendApi.csproj|solutionrelative:basesource.backendapi\\appsettings.production.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{21229A63-E6D4-4161-A24A-8DEFF091A2A2}|BaseSource.BackendApi\\BaseSource.BackendApi.csproj|d:\\cryptohub\\cryptohub\\source\\cryptohub\\basesource.backendapi\\startup.cs.orig||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{21229A63-E6D4-4161-A24A-8DEFF091A2A2}|BaseSource.BackendApi\\BaseSource.BackendApi.csproj|solutionrelative:basesource.backendapi\\startup.cs.orig||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{21229A63-E6D4-4161-A24A-8DEFF091A2A2}|BaseSource.BackendApi\\BaseSource.BackendApi.csproj|d:\\cryptohub\\cryptohub\\source\\cryptohub\\basesource.backendapi\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{21229A63-E6D4-4161-A24A-8DEFF091A2A2}|BaseSource.BackendApi\\BaseSource.BackendApi.csproj|solutionrelative:basesource.backendapi\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{21229A63-E6D4-4161-A24A-8DEFF091A2A2}|BaseSource.BackendApi\\BaseSource.BackendApi.csproj|d:\\cryptohub\\cryptohub\\source\\cryptohub\\basesource.backendapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{21229A63-E6D4-4161-A24A-8DEFF091A2A2}|BaseSource.BackendApi\\BaseSource.BackendApi.csproj|solutionrelative:basesource.backendapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B8CAA053-8987-4254-B208-F2F2B8515B03}|BaseSource.Data\\BaseSource.Data.csproj|d:\\cryptohub\\cryptohub\\source\\cryptohub\\basesource.data\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{B8CAA053-8987-4254-B208-F2F2B8515B03}|BaseSource.Data\\BaseSource.Data.csproj|solutionrelative:basesource.data\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B8CAA053-8987-4254-B208-F2F2B8515B03}|BaseSource.Data\\BaseSource.Data.csproj|d:\\cryptohub\\cryptohub\\source\\cryptohub\\basesource.data\\basesource.data.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{B8CAA053-8987-4254-B208-F2F2B8515B03}|BaseSource.Data\\BaseSource.Data.csproj|solutionrelative:basesource.data\\basesource.data.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6582AD33-6C7E-DA13-7E0F-CF66613E9870}|BaseSource.WebApp\\BaseSource.WebApp.csproj|d:\\cryptohub\\cryptohub\\source\\cryptohub\\basesource.webapp\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6582AD33-6C7E-DA13-7E0F-CF66613E9870}|BaseSource.WebApp\\BaseSource.WebApp.csproj|solutionrelative:basesource.webapp\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6582AD33-6C7E-DA13-7E0F-CF66613E9870}|BaseSource.WebApp\\BaseSource.WebApp.csproj|d:\\cryptohub\\cryptohub\\source\\cryptohub\\basesource.webapp\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6582AD33-6C7E-DA13-7E0F-CF66613E9870}|BaseSource.WebApp\\BaseSource.WebApp.csproj|solutionrelative:basesource.webapp\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B8CAA053-8987-4254-B208-F2F2B8515B03}|BaseSource.Data\\BaseSource.Data.csproj|d:\\cryptohub\\cryptohub\\source\\cryptohub\\basesource.data\\entities\\project.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B8CAA053-8987-4254-B208-F2F2B8515B03}|BaseSource.Data\\BaseSource.Data.csproj|solutionrelative:basesource.data\\entities\\project.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\CryptoHub\\cryptohub\\Source\\CryptoHub\\BaseSource.WebApp.Tests\\Controllers\\LoginControllerTests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:BaseSource.WebApp.Tests\\Controllers\\LoginControllerTests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "SendEmailService.cs",
+              "DocumentMoniker": "D:\\CryptoHub\\cryptohub\\Source\\CryptoHub\\BaseSource.BackendApi.Services\\Services\\Email\\SendEmailService.cs",
+              "RelativeDocumentMoniker": "BaseSource.BackendApi.Services\\Services\\Email\\SendEmailService.cs",
+              "ToolTip": "D:\\CryptoHub\\cryptohub\\Source\\CryptoHub\\BaseSource.BackendApi.Services\\Services\\Email\\SendEmailService.cs",
+              "RelativeToolTip": "BaseSource.BackendApi.Services\\Services\\Email\\SendEmailService.cs",
+              "ViewState": "AgIAACYAAAAAAAAAAIAwwDYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-03T10:57:52.67Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ISendEmailService.cs",
+              "DocumentMoniker": "D:\\CryptoHub\\cryptohub\\Source\\CryptoHub\\BaseSource.BackendApi.Services\\Services\\Email\\ISendEmailService.cs",
+              "RelativeDocumentMoniker": "BaseSource.BackendApi.Services\\Services\\Email\\ISendEmailService.cs",
+              "ToolTip": "D:\\CryptoHub\\cryptohub\\Source\\CryptoHub\\BaseSource.BackendApi.Services\\Services\\Email\\ISendEmailService.cs",
+              "RelativeToolTip": "BaseSource.BackendApi.Services\\Services\\Email\\ISendEmailService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-03T10:58:54.195Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "LoginTests.cs",
+              "DocumentMoniker": "D:\\CryptoHub\\cryptohub\\Source\\CryptoHub\\BaseSource.Test\\WebApp\\LoginTests.cs",
+              "RelativeDocumentMoniker": "BaseSource.Test\\WebApp\\LoginTests.cs",
+              "ToolTip": "D:\\CryptoHub\\cryptohub\\Source\\CryptoHub\\BaseSource.Test\\WebApp\\LoginTests.cs",
+              "RelativeToolTip": "BaseSource.Test\\WebApp\\LoginTests.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAI8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-03T09:41:17.697Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "LoginControllerTests.cs",
+              "DocumentMoniker": "D:\\CryptoHub\\cryptohub\\Source\\CryptoHub\\BaseSource.WebApp.Tests\\Controllers\\LoginControllerTests.cs",
+              "RelativeDocumentMoniker": "BaseSource.WebApp.Tests\\Controllers\\LoginControllerTests.cs",
+              "ToolTip": "D:\\CryptoHub\\cryptohub\\Source\\CryptoHub\\BaseSource.WebApp.Tests\\Controllers\\LoginControllerTests.cs",
+              "RelativeToolTip": "BaseSource.WebApp.Tests\\Controllers\\LoginControllerTests.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAD4vyIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-03T08:39:41.019Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "SimpleTests.cs",
+              "DocumentMoniker": "D:\\CryptoHub\\cryptohub\\Source\\CryptoHub\\BaseSource.WebApp.Tests\\SimpleTests.cs",
+              "RelativeDocumentMoniker": "BaseSource.WebApp.Tests\\SimpleTests.cs",
+              "ToolTip": "D:\\CryptoHub\\cryptohub\\Source\\CryptoHub\\BaseSource.WebApp.Tests\\SimpleTests.cs",
+              "RelativeToolTip": "BaseSource.WebApp.Tests\\SimpleTests.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-03T07:16:27.599Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "UserInfoSideBarViewComponent.cs",
+              "DocumentMoniker": "D:\\CryptoHub\\cryptohub\\Source\\CryptoHub\\BaseSource.WebApp\\ViewComponents\\UserInfoSideBarViewComponent.cs",
+              "RelativeDocumentMoniker": "BaseSource.WebApp\\ViewComponents\\UserInfoSideBarViewComponent.cs",
+              "ToolTip": "D:\\CryptoHub\\cryptohub\\Source\\CryptoHub\\BaseSource.WebApp\\ViewComponents\\UserInfoSideBarViewComponent.cs",
+              "RelativeToolTip": "BaseSource.WebApp\\ViewComponents\\UserInfoSideBarViewComponent.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-03T06:03:04.385Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "D:\\CryptoHub\\cryptohub\\Source\\CryptoHub\\BaseSource.BackendApi\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "BaseSource.BackendApi\\appsettings.Development.json",
+              "ToolTip": "D:\\CryptoHub\\cryptohub\\Source\\CryptoHub\\BaseSource.BackendApi\\appsettings.Development.json",
+              "RelativeToolTip": "BaseSource.BackendApi\\appsettings.Development.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-08-02T10:24:19.274Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "appsettings.Production.json",
+              "DocumentMoniker": "D:\\CryptoHub\\cryptohub\\Source\\CryptoHub\\BaseSource.BackendApi\\appsettings.Production.json",
+              "RelativeDocumentMoniker": "BaseSource.BackendApi\\appsettings.Production.json",
+              "ToolTip": "D:\\CryptoHub\\cryptohub\\Source\\CryptoHub\\BaseSource.BackendApi\\appsettings.Production.json",
+              "RelativeToolTip": "BaseSource.BackendApi\\appsettings.Production.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-08-02T10:24:18.151Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Startup.cs.orig",
+              "DocumentMoniker": "D:\\CryptoHub\\cryptohub\\Source\\CryptoHub\\BaseSource.BackendApi\\Startup.cs.orig",
+              "RelativeDocumentMoniker": "BaseSource.BackendApi\\Startup.cs.orig",
+              "ToolTip": "D:\\CryptoHub\\cryptohub\\Source\\CryptoHub\\BaseSource.BackendApi\\Startup.cs.orig",
+              "RelativeToolTip": "BaseSource.BackendApi\\Startup.cs.orig",
+              "ViewState": "AgIAAI0AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-08-02T10:24:09.397Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "web.config",
+              "DocumentMoniker": "D:\\CryptoHub\\cryptohub\\Source\\CryptoHub\\BaseSource.BackendApi\\web.config",
+              "RelativeDocumentMoniker": "BaseSource.BackendApi\\web.config",
+              "ToolTip": "D:\\CryptoHub\\cryptohub\\Source\\CryptoHub\\BaseSource.BackendApi\\web.config",
+              "RelativeToolTip": "BaseSource.BackendApi\\web.config",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2025-08-02T10:24:05.991Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\CryptoHub\\cryptohub\\Source\\CryptoHub\\BaseSource.BackendApi\\appsettings.json",
+              "RelativeDocumentMoniker": "BaseSource.BackendApi\\appsettings.json",
+              "ToolTip": "D:\\CryptoHub\\cryptohub\\Source\\CryptoHub\\BaseSource.BackendApi\\appsettings.json",
+              "RelativeToolTip": "BaseSource.BackendApi\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-08-02T10:22:13.745Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "_ViewImports.cshtml",
+              "DocumentMoniker": "D:\\CryptoHub\\cryptohub\\Source\\CryptoHub\\BaseSource.WebApp\\Views\\_ViewImports.cshtml",
+              "RelativeDocumentMoniker": "BaseSource.WebApp\\Views\\_ViewImports.cshtml",
+              "ToolTip": "D:\\CryptoHub\\cryptohub\\Source\\CryptoHub\\BaseSource.WebApp\\Views\\_ViewImports.cshtml",
+              "RelativeToolTip": "BaseSource.WebApp\\Views\\_ViewImports.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-02T09:39:59.126Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "_ViewStart.cshtml",
+              "DocumentMoniker": "D:\\CryptoHub\\cryptohub\\Source\\CryptoHub\\BaseSource.WebApp\\Views\\_ViewStart.cshtml",
+              "RelativeDocumentMoniker": "BaseSource.WebApp\\Views\\_ViewStart.cshtml",
+              "ToolTip": "D:\\CryptoHub\\cryptohub\\Source\\CryptoHub\\BaseSource.WebApp\\Views\\_ViewStart.cshtml",
+              "RelativeToolTip": "BaseSource.WebApp\\Views\\_ViewStart.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-02T09:39:56.591Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\CryptoHub\\cryptohub\\Source\\CryptoHub\\BaseSource.Data\\appsettings.json",
+              "RelativeDocumentMoniker": "BaseSource.Data\\appsettings.json",
+              "ToolTip": "D:\\CryptoHub\\cryptohub\\Source\\CryptoHub\\BaseSource.Data\\appsettings.json",
+              "RelativeToolTip": "BaseSource.Data\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-08-02T04:51:40.141Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Project.cs",
+              "DocumentMoniker": "D:\\CryptoHub\\cryptohub\\Source\\CryptoHub\\BaseSource.Data\\Entities\\Project.cs",
+              "RelativeDocumentMoniker": "BaseSource.Data\\Entities\\Project.cs",
+              "ToolTip": "D:\\CryptoHub\\cryptohub\\Source\\CryptoHub\\BaseSource.Data\\Entities\\Project.cs",
+              "RelativeToolTip": "BaseSource.Data\\Entities\\Project.cs",
+              "ViewState": "AgIAAB8AAAAAAAAAAAA8wCgAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-02T04:17:02.633Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "BaseSource.Data.csproj",
+              "DocumentMoniker": "D:\\CryptoHub\\cryptohub\\Source\\CryptoHub\\BaseSource.Data\\BaseSource.Data.csproj",
+              "RelativeDocumentMoniker": "BaseSource.Data\\BaseSource.Data.csproj",
+              "ToolTip": "D:\\CryptoHub\\cryptohub\\Source\\CryptoHub\\BaseSource.Data\\BaseSource.Data.csproj",
+              "RelativeToolTip": "BaseSource.Data\\BaseSource.Data.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-08-01T15:10:54.002Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

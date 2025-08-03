@@ -1,0 +1,338 @@
+﻿
+@model PagedResult<UserVm>
+@{
+    ViewData["Title"] = "User";
+}
+
+
+<div class="row">
+    
+    <div class="col-12  ">
+        <div class="card shadow h-100 mb-4 ">
+            <div class="card-header d-flex justify-content-between align-items-center">
+                <h3 class="m-0 font-weight-bold">@ViewData["Title"]</h3>
+                @if (User.IsInPermission(Permissions.User.Create))
+                {
+                    <a class="gap-2 btn btn-primary btn-sm" href="@Url.Action("Create")">Create</a>
+                }
+            </div>
+            <div class="card-body">
+                <form asp-action="Index" method="get" class="mb-4">
+                    <div class="row row-cols-sm-4 g-2 mb-2">
+                        <div class="">
+                            <label for="username" class="form-label">Tên đăng nhập</label>
+                            <input type="text" class="form-control" name="username" value="@Context.Request.Query["username"]">
+                        </div>
+                        <div class="">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="text" class="form-control" name="email" value="@Context.Request.Query["email"]">
+                        </div>
+                        <div class="">
+                            <label for="roleId" class="form-label">Role</label>
+                            @Html.DropDownList("roleId", new SelectList(ViewBag.Roles, "Id", "Name"), "--- Select ---", new { @class = "form-control" })
+                        </div>
+                    </div>
+                    <div class="mb-2">
+                        <div class="form-check">
+                            @Html.CheckBox("locked", new { @class = "form-check-input" })
+                            <label for="locked" class="form-check-label">Đã khóa</label>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <button type="submit" class="gap-2 btn btn-primary btn-sm">
+                            <i class="fas fa-search"></i>
+                            <span class="ms-1">Search</span>
+                        </button>
+                        <a asp-action="Index" class="btn btn-success btn-sm ms-2">
+                            <i class="fas fa-sync-alt"></i>
+                            <span class="ms-1">Reset</span>
+                        </a>
+                    </div>
+                </form>
+
+                <div class="table-responsive">
+                    <table class="table table-bordered table-hover small">
+                        <thead>
+                            <tr class="table-light">
+                                <th>
+                                    Họ tên
+                                </th>
+                                <th>
+                                    Tên đăng nhập
+                                </th>
+                                <th>
+                                    Email-Phone
+                                </th>
+                                <th>Tham gia</th>
+                                <th>
+                                    Role
+                                </th>
+                                <th>Manage</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var item in Model.Items)
+                            {
+                                <tr>
+                                    <td>
+                                        @item.LastName @item.FirstName
+                                    </td>
+                                    <td>
+                                        @item.UserName
+                                    </td>
+                                    <td>
+                                        <div>@item.Email</div>
+                                        <div>@item.Phone</div>
+                                    </td>
+                                    <td>
+                                        @item.JoinedDate.ToString("HH:mm dd/MM/yyyy")
+                                    </td>
+                                    <td>
+                                        @if (User.IsInPermission(Permissions.User.Role))
+                                        {
+                                            <a class="gap-2 btn btn-sm btn-primary mb-2" href="#" onclick="editUserRole('@item.Id'); return false;">Role</a>
+                                        }
+                                        @if (item.Roles != null)
+                                        {
+                                            <div>
+                                                @string.Join(", ", item.Roles)
+                                            </div>
+                                        }
+                                    </td>
+                                    <td class="text-nowrap">
+                                        <a class="gap-2 btn btn-sm btn-success" href="@Url.Action("Info", "User", new { userId = item.Id })">Chi tiết</a>
+                                        @if (User.IsInPermission(Permissions.User.ResetPassword))
+                                        {
+                                            <a class="gap-2 btn btn-sm btn-danger reset-password" href="#" data-href="@Url.Action("ResetPassword", "User", new { id = item.Id })">Reset password</a>
+                                        }
+
+                                        @if (User.IsInPermission(Permissions.User.Edit))
+                                        {
+                                            if (!item.EmailConfirmed)
+                                            {
+                                                <a class="gap-2 btn btn-sm btn-warning verify-account" href="#" data-href="@Url.Action("VerifyEmail", "User", new { id = item.Id })">Verification</a>
+                                            }
+                                        }
+
+                                        @if (User.IsInPermission(Permissions.User.Lock))
+                                        {
+                                            if (item.Id != User.FindFirstValue(ClaimTypes.NameIdentifier))
+                                            {
+                                                if (item.LockoutEndDateUtc != null && item.LockoutEndDateUtc.Value > DateTime.Now)
+                                                {
+                                                    <button class="gap-2 btn btn-sm btn-danger shadow-sm" data-toggle="btn-confirm" data-title="Unlock this user?" data-href="@Url.Action("Lock", new { id = item.Id })" title="Lock"><i class="fas fa-lock fa-fw"></i> Unlock</button>
+                                                }
+                                                else
+                                                {
+                                                    <button class="gap-2 btn btn-sm btn-danger shadow-sm" data-toggle="btn-confirm" data-title="Lock this user?" data-href="@Url.Action("Lock", new { id = item.Id })" title="Lock"><i class="fas fa-lock-open fa-fw"></i> Lock</button>
+                                                }
+                                            }
+                                        }
+                                    </td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+
+                @if (Model.PageCount > 1)
+                {
+                    <div>
+                        @await Html.PartialAsync("_Pager", new PagedResultBase()
+               {
+                   PageNumber = Model.PageNumber,
+                   PageSize = Model.PageSize,
+                   TotalItemCount = Model.TotalItemCount,
+                   PageUrl = Url.Action("Index")
+               })
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="modal fade" id="set-role" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Set role</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="VerifyModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Xác minh tài khoản</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                @using (Html.BeginForm("VerifyEmail", "User", FormMethod.Post, new { role = "form", @data_name = "ajaxForm" }))
+                {
+
+                    <h2><strong>Bạn muốn xác minh tài khoản này?</strong></h2>
+                    <input type="hidden" class="form-control" name="UserId" />
+
+                    <div class="text-end">
+                        <button type="button" data-bs-dismiss="modal" class="btn btn-outline-dark">Cancel</button>
+                        <button type="submit" class="gap-2 btn btn-primary">Xác nhận</button>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="add-money" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Nạp tiền</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+            </div>
+        </div>
+    </div>
+</div>
+
+
+@section Scripts {
+    <script>
+        $(".user-nav").addClass("active");
+
+        function editUserRole(id) {
+            $("#set-role .modal-body").html('<i class="fas fa-fw fa-spin fa-spinner"></i>');
+            $("#set-role").modal('show');
+
+            $.ajax({
+                method: "GET",
+                url: '@Url.Action("EditUserRole", "User")',
+                data: { id: id },
+                success: function (res) {
+                    $("#set-role .modal-body").html(res);
+
+                    $('#form-edit-role').submit(function (e) {
+                        e.preventDefault();
+                        $.ajax({
+                            method: $('#form-edit-role').attr('method'),
+                            url: $('#form-edit-role').attr('action'),
+                            data: $('#form-edit-role').serializeArray(),
+                            success: function (res) {
+                                location.reload();
+                            }
+                        });
+                    });
+                }, error: function (error) {
+                    alert("Error!");
+                }
+            });
+        }
+
+        $(".reset-password").on("click", function (e) {
+            e.preventDefault();
+
+            if (confirm("Bạn có chắc chắn muốn reset password?")) {
+                var $button = $(this);
+
+                $.ajax({
+                    type: "GET",
+                    url: $button.attr("data-href"),
+                    success: function (res) {
+                        if (res.isSuccessed == true) {
+                            alert('Reset thành công! Mật khẩu mới: ' + res.resultObj);
+                        } else if (res.message != null) {
+                            alert(res.message);
+                        }
+                    }
+                });
+            }
+
+        });
+
+
+        $(".verify-account").on("click", function (e) {
+            e.preventDefault();
+
+            if (confirm("Bạn có muốn xác minh tài khoản này?")) {
+                var $button = $(this);
+                $.ajax({
+                    type: "POST",
+                    url: $button.attr("data-href"),
+                    success: function (res) {
+                        if (res.isSuccessed == true) {
+                            location.reload();
+                        } else if (res.message != null) {
+                            alert(res.message);
+                        }
+
+
+                    }
+                });
+            }
+
+        });
+
+        function editBalance(id) {
+            $("#add-money .modal-body").html('<i class="fas fa-fw fa-spin fa-spinner"></i>');
+            $("#add-money").modal('show');
+
+            $.ajax({
+                method: "GET",
+                url: '@Url.Action("EditBalance", "User")',
+                data: { id: id },
+                success: function (res) {
+                    $("#add-money .modal-body").html(res);
+
+                    $('#form-add-money').submit(function (e) {
+                        e.preventDefault();
+
+                        $('#form-add-money .field-validation-valid').each(function (i, obj) {
+                            $(this).html("")
+                        });
+                        var $form = $(this);
+                        var $btnSubmit = $form.find("button[type='submit']");
+
+                        $btnSubmit.attr("disabled", "true");
+                        $.ajax({
+                            method: $form.attr("method"),
+                            url: $form.attr("action"),
+                            data: $form.serializeArray(),
+                            beforeSend: function () {
+                                $btnSubmit.append(`<i class="fas fa-sync-alt fa-fw fa-spin"></i>`);
+                            },
+                            complete: function () {
+                                $btnSubmit.find("i").remove();
+                            },
+                            success: function (res) {
+                                $form.find(".field-validation-valid").empty();
+                                if (res.isSuccessed == true) {
+                                    toastr.info("Success");
+                                    $('#add-money').modal("hide");
+                                    location.reload();
+
+                                } else if (res.validationErrors != null && res.validationErrors.length) {
+                                    $.each(res.validationErrors, function (i, v) {
+                                        $form.find("span[data-valmsg-for='" + v.pos + "']").html(v.error);
+                                    });
+                                    $btnSubmit.removeAttr("disabled");
+                                } else if (res.message != null) {
+                                    toastr.error(res.message);
+                                }
+                            }
+                        });
+                    });
+                }, error: function (error) {
+                    alert("Error!");
+                }
+            });
+        }
+    </script>
+}

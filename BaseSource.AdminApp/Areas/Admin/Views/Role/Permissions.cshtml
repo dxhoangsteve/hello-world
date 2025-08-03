@@ -1,0 +1,98 @@
+﻿@model PermissionVm
+@{
+    ViewData["Title"] = "Phân quyền \"" + Model.RoleName + "\"";
+}
+
+
+<div>
+    <div class="card shadow h-100">
+        <div class="card-header d-flex justify-content-between align-items-center">
+            <h3 class="m-0 font-weight-bold">@ViewData["Title"]</h3>
+            <a class="gap-2 btn btn-sm btn-secondary shadow-sm" asp-action="Index"><i class="fas fa-arrow-left fa-fw fa-sm text-white-50"></i> Back</a>
+        </div>
+
+        <div class="card-body ">
+            <form method="post" asp-action="UpdatePermission" data-name="ajaxForm">
+                <input asp-for="@Model.RoleId" type="hidden" />
+                <input asp-for="@Model.RoleName" type="hidden" />
+                <table class="table table-sm text-nowrap">
+                    <thead>
+                        <tr>
+                            <th>
+                                Type
+                            </th>
+                            <th>
+                                Permission
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @{ var i = 0;}
+                        @foreach (var group in Model.RoleClaims.GroupBy(x => x.Value.Substring(0, x.Value.LastIndexOf("."))).Select(x => x))
+                        {
+                            <tr>
+                                <td colspan="2"><strong>@group.Key</strong></td>
+                            </tr>
+                            foreach (var item in group)
+                            {
+                                <tr>
+                                    <td>
+                                        <input asp-for="@Model.RoleClaims[i].Type" type="hidden" />
+                                    </td>
+                                    <td>
+                                        <input asp-for="@Model.RoleClaims[i].Value" type="hidden" />
+                                        <div class="form-check">
+                                            <input asp-for="@Model.RoleClaims[i].Selected" class="form-check-input check-role-claims" disabled />
+                                            <label asp-for="@Model.RoleClaims[i].Selected" class="mb-0">
+                                                @Model.RoleClaims[i].Value
+                                            </label>
+                                        </div>
+                                    </td>
+                                </tr>
+                                i++;
+                            }
+                        }
+                        @*@for (int i = 0; i < Model.RoleClaims.Count; i++)
+                            {
+                                <tr>
+                                    <td>
+                                        <input asp-for="@Model.RoleClaims[i].Type" type="hidden" />
+                                        @Model.RoleClaims[i].Type
+                                    </td>
+                                    <td>
+                                        <input asp-for="@Model.RoleClaims[i].Value" type="hidden" />
+                                        <div class="form-check">
+                                            <input asp-for="@Model.RoleClaims[i].Selected" class="form-check-input check-role-claims" disabled />
+                                            <label asp-for="@Model.RoleClaims[i].Selected">
+                                                @Model.RoleClaims[i].Value
+                                            </label>
+                                        </div>
+                                    </td>
+                                </tr>
+                            }*@
+                    </tbody>
+                </table>
+
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                @if (!RoleConstants.NotAllowedModify.Contains(Model.RoleName))
+                {
+                    <button type="submit" class="gap-2 btn btn-primary">
+                        <i class="fa fa-check fa-fw"></i>
+                        Save change
+                    </button>
+                    <script>
+                        Array.prototype.forEach.call(document.getElementsByClassName("check-role-claims"), function (el) {
+                            el.disabled = false;
+                        });
+                    </script>
+                }
+            </form>
+        </div>
+    </div>
+</div>
+
+@section Scripts{
+    <script>
+        $(".Role-nav").addClass("active");
+    </script>
+}

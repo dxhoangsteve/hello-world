@@ -1,0 +1,221 @@
+﻿
+html #layoutSidenav_content {
+    font-size: 14px;
+}
+
+body {
+    font-family: "Roboto", system-ui;
+    color: #000
+}
+
+h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
+    color: #000;
+    font-weight: bold;
+}
+/*
+div::-webkit-scrollbar, ul::-webkit-scrollbar {
+    width: 8px;
+    height: 8px
+}
+
+div::-webkit-scrollbar-thumb, ul::-webkit-scrollbar-thumb {
+    background: rgba(0,0,0,.2);
+    border-radius: 10px
+}
+
+    div::-webkit-scrollbar-thumb:hover, ul::-webkit-scrollbar-thumb:hover {
+        background: rgba(0,0,0,.5)
+    }*/
+
+.fa-sync-alt.fa-spin {
+    margin-left: 5px;
+}
+
+#toast-container > div {
+    opacity: 1;
+    box-shadow: 0 5px 11px 0 rgba(0,0,0,.18), 0 4px 15px 0 rgba(0,0,0,.15) !important;
+}
+
+.form-control,
+.bootstrap-select > .dropdown-toggle {
+    padding: 0.5rem 0.75rem;
+    min-height: 32px;
+    line-height: 1.25;
+}
+
+.col-form-label {
+    padding-top: calc(0.5rem + 1px);
+    padding-bottom: calc(0.5rem + 1px);
+}
+
+.form-label {
+    margin-bottom: 0.25rem;
+}
+
+.bg-yellow {
+    color: #000;
+    background-color: yellow !important
+}
+
+.bg-blue {
+    color: #fff;
+    background-color: #4285f4 !important
+}
+
+.bg-green {
+    color: #fff;
+    background-color: #34a853 !important
+}
+
+.bg-pink {
+    color: #000;
+    background-color: #e6b8af !important
+}
+
+#myForm .col-form-label {
+    text-align: right;
+}
+
+/* table */
+.table {
+    color: #000
+}
+
+    .table th {
+        /*white-space: nowrap;*/
+        text-align: center;
+        vertical-align: middle;
+        min-width: 85px;
+    }
+
+/*th:first-child, td:first-child {
+    position: sticky;
+    left: 0;
+    z-index: 3;
+    background-color: #f8f9fa;
+}*/
+
+.table-slvechitiet th.sticky-left {
+    position: sticky;
+    left: 0;
+    background-color: lightgray;
+}
+
+.table-slvechitiet td.sticky-left {
+    position: sticky;
+    left: 0;
+    background-color: #f8f9fa;
+}
+
+.table-slvechitiet th.sticky-left:nth-child(2), td.sticky-left:nth-child(2) {
+    left: 85px;
+}
+
+/* sticky head */
+.table-fit {
+    overflow: auto;
+}
+
+    .table-fit thead {
+        position: sticky;
+        top: -1px;
+        z-index: 1;
+        background-color: lightgray;
+    }
+
+/* card fit height */
+.table-fit {
+    max-height: calc(100vh - 65px) !important;
+}
+
+.scroll-wrapper {
+    position: fixed;
+    bottom: 0; /* Để neo cố định ở đầu, nếu muốn ở cuối thì đổi thành bottom: 0; */
+    left: 0;
+    width: 100%;
+    overflow-x: auto;
+    z-index: 9999; /* Đảm bảo luôn hiển thị trên cùng */
+    background-color: #f8f9fa; /* Màu nền của thanh cuộn */
+}
+
+.table > :not(caption) > * > *, .dataTable-table > :not(caption) > * > * {
+    padding: 0.2rem 0.4rem;
+}
+
+table td {
+    line-height: 1.35;
+}
+
+table .scroll-cell {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-y: auto;
+    max-height: 3rem;
+}
+
+/* override topbar */
+.nav-fixed #layoutSidenav #layoutSidenav_nav .sidenav {
+    padding-top: 0;
+}
+
+.nav-fixed .topnav {
+    position: unset;
+}
+
+.nav-fixed #layoutSidenav #layoutSidenav_content {
+    top: 0;
+}
+
+#layoutSidenav #layoutSidenav_content {
+    display: block;
+}
+
+.bg-orange {
+    background-color: orange !important;
+}
+
+@media (max-width: 575px) {
+    .topnav .dropdown .dropdown-menu {
+        width: auto;
+        min-width: 15rem;
+        right: 65px;
+        left: auto;
+        top: 65px !important;
+    }
+}
+
+.bootstrap-select .dropdown-menu li a span.text {
+    white-space: normal;
+}
+
+.badge-PendingConfirm, .badge-PendingCallback {
+    font-weight: 700;
+    background-color: #fef3c7;
+    color: #b45309;
+}
+
+.badge-Processing {
+    font-weight: 700;
+    background-color: #dbeafe;
+    color: blue;
+}
+
+.badge-Completed {
+    font-weight: 700;
+    background-color: #dcfce7;
+    color: green;
+}
+
+.badge-Canceled {
+    font-weight: 700;
+    background-color: #fee2e2;
+    color: red;
+}
+
+.dropzone .dz-preview .dz-image img {
+    display: block;
+    object-fit: cover;
+    max-width: 100%;
+    height: 100%;
+}

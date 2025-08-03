@@ -1,0 +1,31 @@
+﻿
+@model UserInfoResponse
+
+<li class="nav-item dropdown no-caret dropdown-user me-3 me-lg-4">
+    <a class="btn btn-icon btn-transparent-dark dropdown-toggle" id="navbarDropdownUserImage" href="javascript:void(0);" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img class="img-fluid" src="/images/avatar.svg" /></a>
+    <div class="dropdown-menu dropdown-menu-end border-0 shadow animated--fade-in-up" aria-labelledby="navbarDropdownUserImage">
+        <h6 class="dropdown-header d-flex align-items-center">
+            <img class="dropdown-user-img" src="/images/avatar.svg" />
+            <div class="dropdown-user-details">
+                <div class="dropdown-user-details-name">@Model.UserName</div>
+                <div class="dropdown-user-details-email">@Model.Email</div>
+            </div>
+        </h6>
+        <div class="dropdown-divider"></div>
+        <a class="dropdown-item" href="@Url.Action("Manage", "Account")">
+            <div class="dropdown-item-icon"><i class="far fa-cog"></i></div>
+            Tài khoản
+        </a>
+        <a class="dropdown-item" href="@Url.Action("ChangePassword", "Account")">
+            <div class="dropdown-item-icon"><i class="far fa-key"></i></div>
+            Đổi mật khẩu
+        </a>
+
+        <a class="dropdown-item" href="@Url.Action("Logout", "Account", new { area = "" })">
+            <div class="dropdown-item-icon"><i class="far fa-right-from-bracket"></i></div>
+            Logout
+        </a>
+
+        <div class="d-none" id="common-userId">@Model.Id</div>
+    </div>
+</li>

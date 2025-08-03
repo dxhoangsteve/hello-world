@@ -1,0 +1,74 @@
+﻿@model PagedResultBase
+
+@{
+    var urlTemplate = Model.PageUrl + "?page={0}";
+    urlTemplate = ViewContext.HttpContext.Request.Query.ConvertToUrlString(urlTemplate, new[] { "page", "pageSize" });
+
+    var startIndex = Math.Max(Model.PageNumber - 2, 1);
+    var finishIndex = Math.Min(Model.PageNumber + 2, Model.PageCount);
+
+
+    //var pageSize = ViewContext.HttpContext.Request.Query["pageSize"] == "20" ? 20 : 10;
+
+    var urlTemplateFull = urlTemplate;// + $"&pageSize={pageSize}";
+}
+
+<div class="rows-page d-flex justify-content-between align-items-center ">
+    <div class="list-current d-flex align-items-center">
+        @*<span>Rows per page: </span>
+        <select class="pageSize-select" onchange="this.value == '' ? void (0) : window.location.href = this.value;">
+            @if (pageSize == 10)
+            {
+                <option value="@string.Format(urlTemplate + "&pageSize=10", 1)" selected>10</option>
+                <option value="@string.Format(urlTemplate + "&pageSize=20", 1)">20</option>
+                
+            }
+            else
+            {
+                <option value="@string.Format(urlTemplate + "&pageSize=10", 1)">10</option>
+                <option value="@string.Format(urlTemplate + "&pageSize=20", 1)" selected>20</option>
+               
+            }
+        </select>*@
+    </div>
+    <nav class="align-items-center">
+        @if (Model.PageCount > 1)
+        {
+            <ul class="pagination common-pagination">
+                @if (Model.PageNumber != startIndex)
+                {
+                    <li class="page-item">
+                        <a class="page-link text-secondary" href="@urlTemplateFull.Replace("{0}", "1")">&#10094;&#10094;</a>
+                    </li>
+                    <li class="page-item">
+                        <a class="page-link text-secondary" href="@urlTemplateFull.Replace("{0}", (Model.PageNumber-1).ToString())">&#10094;</a>
+                    </li>
+                }
+                @for (var i = startIndex; i <= finishIndex; i++)
+                {
+                    if (i == Model.PageNumber)
+                    {
+                        <li class="page-item active">
+                            <span class="page-link">@i <span class="sr-only">(current)</span></span>
+                        </li>
+                    }
+                    else
+                    {
+                        <li class="page-item">
+                            <a class="page-link text-secondary" href="@urlTemplateFull.Replace("{0}", i.ToString())">@i</a>
+                        </li>
+                    }
+                }
+                @if (Model.PageNumber != finishIndex)
+                {
+                    <li class="page-item">
+                        <a class="page-link text-secondary" href="@urlTemplateFull.Replace("{0}", (Model.PageNumber+1).ToString())">&#10095;</a>
+                    </li>
+                    <li class="page-item">
+                        <a class="page-link text-secondary" href="@urlTemplateFull.Replace("{0}", Model.PageCount.ToString())">&#10095;&#10095;</a>
+                    </li>
+                }
+            </ul>
+        }
+    </nav>
+</div>

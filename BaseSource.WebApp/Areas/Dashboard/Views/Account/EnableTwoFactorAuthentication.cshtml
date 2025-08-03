@@ -1,0 +1,55 @@
+﻿
+@model EnableTwoFactorAuthenticationVm
+@{
+    ViewBag.Title = "Enable two-factor authentication";
+}
+
+
+<div class="card shadow h-100">
+    <div class="card-header d-flex justify-content-between align-items-center">
+        <h3 class="m-0 font-weight-bold">@ViewData["Title"]</h3>
+        <a class="btn btn-sm btn-secondary shadow-sm" asp-action="Manage"><i class="fas fa-arrow-left fa-fw fa-sm text-white-50"></i> Back</a>
+    </div>
+
+    <div class="card-body">
+        <div class="row">
+            <div class="col-md-8">
+                <h6>1. Add @SystemConstants.SiteAuthorName to Google Authenticator</h6>
+                <p>Open Google Authenticator and add @SystemConstants.SiteAuthorName by scanning the QR Code to the right.</p>
+                <h6>2. Enter the 6 digit code that Google Authenticator generates</h6>
+
+                <p>Verify that Movie Manager is added correctly in Google Authenticator by entering the 6 digit code which Google Authenticator generates for @SystemConstants.SiteAuthorName below, and then click Enable. </p>
+
+                @using (Html.BeginForm("EnableTwoFactorAuthentication", "Account", FormMethod.Post, new { role = "form" }))
+                {
+                    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+                    @Html.HiddenFor(m => m.SecretKey)
+                    @Html.HiddenFor(m => m.BarcodeUrl)
+
+                    <div class="row mb-3">
+                        @Html.LabelFor(m => m.Code, new { @class = "col-md-12 control-label" })
+                        <div class="col-md-6">
+                            @Html.TextBoxFor(m => m.Code, new { @class = "form-control", autocomplete = "off" })
+                            @Html.ValidationMessageFor(m => m.Code, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <button type="submit" class="btn btn-primary">Enable</button>
+                    </div>
+                }
+            </div>
+            <div class="col-md-4">
+                <div class="mb-4"><img src="@Model.BarcodeUrl" /></div>
+                <div>Manual Setup Code: <span>@Model.SecretKey</span></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        $(".user-nav").addClass("active");
+    </script>
+}

@@ -1,0 +1,146 @@
+/*
+@font-face {
+    font-family: "Plus Jakarta Sans";
+    src: local("Plus Jakarta Sans ExtraBold"), local("PlusJakartaSans-ExtraBold"), url("./fonts/PlusJakartaSans-ExtraBold.woff2") format("woff2"), url("./fonts/PlusJakartaSans-ExtraBold.woff") format("woff"), url("./fonts/PlusJakartaSans-ExtraBold.ttf") format("truetype"), url("./fonts/PlusJakartaSans-ExtraBold.svg#PlusJakartaSans-ExtraBold") format("svg");
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Plus Jakarta Sans";
+    src: local("Plus Jakarta Sans Bold"), local("PlusJakartaSans-Bold"), url("./fonts/PlusJakartaSans-Bold.woff2") format("woff2"), url("./fonts/PlusJakartaSans-Bold.woff") format("woff"), url("./fonts/PlusJakartaSans-Bold.ttf") format("truetype"), url("./fonts/PlusJakartaSans-Bold.svg#PlusJakartaSans-Bold") format("svg");
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Plus Jakarta Sans";
+    src: local("Plus Jakarta Sans Medium"), local("PlusJakartaSans-Medium"), url("./fonts/PlusJakartaSans-Medium.woff2") format("woff2"), url("./fonts/PlusJakartaSans-Medium.woff") format("woff"), url("./fonts/PlusJakartaSans-Medium.ttf") format("truetype"), url("./fonts/PlusJakartaSans-Medium.svg#PlusJakartaSans-Medium") format("svg");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Plus Jakarta Sans";
+    src: local("Plus Jakarta Sans Regular"), local("PlusJakartaSans-Regular"), url("./fonts/PlusJakartaSans-Regular.woff2") format("woff2"), url("./fonts/PlusJakartaSans-Regular.woff") format("woff"), url("./fonts/PlusJakartaSans-Regular.ttf") format("truetype"), url("./fonts/PlusJakartaSans-Regular.svg#PlusJakartaSans-Regular") format("svg");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+body {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    color: #212529;
+}
+
+h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
+    font-family: "Plus Jakarta Sans", sans-serif;
+}*/
+
+pre code.hljs{display:block;overflow-x:auto;padding:1em}code.hljs{padding:3px 5px}.hljs{background:#272822;color:#ddd}.hljs-keyword,.hljs-literal,.hljs-name,.hljs-selector-tag,.hljs-strong,.hljs-tag{color:#f92672}.hljs-code{color:#66d9ef}.hljs-attribute,.hljs-link,.hljs-regexp,.hljs-symbol{color:#bf79db}.hljs-addition,.hljs-built_in,.hljs-bullet,.hljs-emphasis,.hljs-section,.hljs-selector-attr,.hljs-selector-pseudo,.hljs-string,.hljs-subst,.hljs-template-tag,.hljs-template-variable,.hljs-title,.hljs-type,.hljs-variable{color:#a6e22e}.hljs-class .hljs-title,.hljs-title.class_{color:#fff}.hljs-comment,.hljs-deletion,.hljs-meta,.hljs-quote{color:#75715e}.hljs-doctag,.hljs-keyword,.hljs-literal,.hljs-section,.hljs-selector-id,.hljs-selector-tag,.hljs-title,.hljs-type{font-weight:700}
+
+code[class*="language-"], pre[class*="language-"] {
+    color: #ccc;
+    background: #272822;
+    text-shadow: none;
+}
+
+.mce-content-body [data-mce-selected=inline-boundary] {
+    background-color: black;
+}
+
+img:not([width]):not(.mce-pagebreak) {
+    width: 100%;
+    height: auto;
+}
+
+img.mce-pagebreak {
+    height: 3px;
+}
+
+img {
+    max-width: 100%;
+}
+
+.mce-content-body::after {
+    color: #212529;
+    content: "";
+    width: 1px;
+    height: calc(30vh + 550px);
+    display: block;
+}
+
+.mce-content-body:not([dir=rtl])[data-mce-placeholder]:not(.mce-visualblocks)::before {
+    left:  calc(max((100% - 760px)/2, 0px)) !important;
+    top: 0px;
+    color: rgba(0,0,0,0.2);
+}
+
+code[class*=language-] ::selection, 
+code[class*=language-]::selection, 
+pre[class*=language-] ::selection, 
+pre[class*=language-]::selection {
+    background: hsla(234, 100%, 66%, 0.5);
+}
+
+.mce-content-body table {
+    width: 100%;
+    max-width: 100%;
+}
+
+.mce-content-body table > thead > tr > th {
+    background-color: #fed261;
+}
+.mce-content-body table > tbody > tr:nth-child(odd) > td, 
+.mce-content-body table > tbody > tr:nth-child(odd) > th {
+    background-color: #f8f8f8;
+}
+
+.mce-content-body table > tbody > tr > td {
+    border-style: solid !important;
+    padding: 5px;
+}
+.mce-content-body p, 
+.mce-content-body li {
+    line-height: 1.5;
+}
+
+/* ===== Scrollbar CSS ===== */
+/* Firefox */
+* {
+  scrollbar-width: auto;
+  scrollbar-color: #6C757D;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 6px;
+  height: 6px; 
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #6C757D;
+  border-radius: 10px;
+  border: 4px solid #6C757D;
+  visibility: hidden;
+
+  -moz-transition: visibility .45s ease-in-out .1s;
+  -ms-transition: visibility .45s ease-in-out .1s;
+  -o-transition: visibility .45s ease-in-out .1s;
+  -webkit-transition: visibility .45s ease-in-out .1s;
+  transition: visibility .45s ease-in-out .1s;
+}
+
+  
+*:hover::-webkit-scrollbar-thumb {
+    background-color: #6C757D;
+    visibility: visible;
+}
+
+*:hover::-webkit-scrollbar-thumb {
+    background-color: #6C757D;
+    visibility: visible;
+}

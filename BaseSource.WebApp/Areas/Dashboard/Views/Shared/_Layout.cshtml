@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>@ViewData["Title"] - Admin</title>
+    <link href="~/admin/css/styles.css" rel="stylesheet" />
+
+    <link href="~/lib/fontawesome-pro-6.5.1-web/css/all.min.css" rel="stylesheet" />
+    <link href="~/lib/toastr/toastr.min.css" rel="stylesheet" />
+    <link href="~/lib/bootstrap-select/css/bootstrap-select.min.css" rel="stylesheet" />
+
+    <link href="~/admin/css/site.css" rel="stylesheet" asp-append-version="true" />
+    @await RenderSectionAsync("Styles", required: false)
+</head>
+<body class="nav-fixed" id="page-top">
+    <nav class="topnav navbar navbar-expand shadow justify-content-between justify-content-sm-start navbar-light bg-white" id="sidenavAccordion">
+        @await Html.PartialAsync("_NavTopbar")
+    </nav>
+    <div id="layoutSidenav">
+        <div id="layoutSidenav_nav">
+            @await Html.PartialAsync("_SideBar")
+        </div>
+        <div id="layoutSidenav_content">
+            <main class="container-fluid p-4">
+                @RenderBody()
+            </main>
+        </div>
+    </div>
+
+    @await Html.PartialAsync("_DetailsModal")
+
+    <script>
+        const URL_API = '@Configuration["BackendApiBaseAddress"]';
+    </script>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="~/admin/js/scripts.js"></script>
+
+    <script src="~/lib/toastr/toastr.min.js"></script>
+    <script src="~/lib/bootstrap-select/js/bootstrap-select.min.js"></script>
+    <script src="~/lib/signalr/signalr.min.js"></script>
+    <script src="~/lib/js-cookies/js.cookie.min.js"></script>
+
+    <script src="~/admin/js/site.js" asp-append-version="true"></script>
+    <script src="~/admin/js/signalr-common.js"></script>
+
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

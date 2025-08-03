@@ -1,0 +1,58 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="ElmahLogs\**" />
+    <Compile Remove="Logs\**" />
+    <Compile Remove="mailssave\**" />
+    <Content Remove="ElmahLogs\**" />
+    <Content Remove="Logs\**" />
+    <Content Remove="mailssave\**" />
+    <EmbeddedResource Remove="ElmahLogs\**" />
+    <EmbeddedResource Remove="Logs\**" />
+    <EmbeddedResource Remove="mailssave\**" />
+    <None Remove="ElmahLogs\**" />
+    <None Remove="Logs\**" />
+    <None Remove="mailssave\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Remove="web.config" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <_ContentIncludedByDefault Remove="web.config" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <FrameworkReference Include="Microsoft.AspNetCore.App" />
+    <None Include="web.config" />
+    <PackageReference Include="ElmahCore" Version="2.1.2" />
+    <PackageReference Include="EPPlus" Version="8.0.7" />
+    <PackageReference Include="GoogleAuthenticator" Version="3.2.0" />
+    <PackageReference Include="MailKit" Version="4.13.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="9.0.7" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="9.0.0" />
+    <PackageReference Include="MimeKit" Version="4.13.0" />
+    <PackageReference Include="Serilog" Version="4.3.0" />
+    <PackageReference Include="Serilog.Extensions.Hosting" Version="9.0.0" />
+    <PackageReference Include="Serilog.Sinks.Async" Version="2.1.0" />
+    <PackageReference Include="Serilog.Sinks.File" Version="7.0.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="9.0.3" />
+    <PackageReference Include="Swashbuckle.AspNetCore.Annotations" Version="9.0.3" />
+    <PackageReference Include="X.PagedList" Version="10.5.7" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\BaseSource.BackendApi.Services\BaseSource.BackendApi.Services.csproj" />
+    <ProjectReference Include="..\BaseSource.Data\BaseSource.Data.csproj" />
+    <ProjectReference Include="..\BaseSource.PermissionBased\BaseSource.PermissionBased.csproj" />
+    <ProjectReference Include="..\BaseSource.Shared\BaseSource.Shared.csproj" />
+    <ProjectReference Include="..\BaseSource.Utilities\BaseSource.Utilities.csproj" />
+    <ProjectReference Include="..\BaseSource.ViewModels\BaseSource.ViewModels.csproj" />
+  </ItemGroup>
+
+</Project>

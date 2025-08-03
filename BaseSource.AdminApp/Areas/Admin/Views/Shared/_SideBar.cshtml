@@ -1,0 +1,35 @@
+﻿<nav class="sidenav shadow-right sidenav-light">
+    <div class="sidenav-menu">
+        <div class="nav accordion" id="accordionSidenav">
+
+            <div class="sidenav-menu-heading">DANH MỤC</div>
+            <a class="nav-link home-nav" href="@Url.Action("Index", "Home")">
+                <div class="nav-link-icon"><i class="far fa-dashboard"></i></div>
+                Dashboard
+            </a>
+
+
+            <div class="sidenav-menu-heading">HỆ THỐNG</div>
+            @if (User.IsInPermission(Permissions.User.View))
+            {
+                <a class="nav-link user-nav" href="@Url.Action("Index", "User")">
+                    <div class="nav-link-icon"><i class="far fa-user"></i></div>
+                    Danh sách User
+                </a>
+            }
+            @if (User.IsInRole(RoleConstants.Admin))
+            {
+                <a class="nav-link Role-nav" href="@Url.Action("Index", "Role")">
+                    <div class="nav-link-icon"><i class="far fa-list"></i></div>
+                    Vai trò
+                </a>
+                <div class="sidenav-menu-heading">CẤU HÌNH</div>
+                <a class="nav-link setting-nav" href="@Url.Action("Index", "Setting")">
+                    <div class="nav-link-icon"><i class="far fa-cog"></i></div>
+                    Setting
+                </a>
+            }
+
+        </div>
+    </div>
+</nav>

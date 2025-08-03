@@ -1,0 +1,22 @@
+﻿@using BaseSource.AdminApp
+@using BaseSource.AdminApp.Models
+@using BaseSource.Shared.Constants
+@using BaseSource.Shared.Enums
+@using BaseSource.ViewModels.Common
+@using BaseSource.Utilities.Helper
+@using BaseSource.ViewModels.Admin
+@using BaseSource.Utilities.Extensions
+@using BaseSource.PermissionBased.ViewModels
+@using BaseSource.PermissionBased.Constants
+@using System.Security.Claims
+@using BaseSource.ViewModels.Shared
+@using BaseSource.ViewModels.Shared.Account
+
+@using Microsoft.AspNetCore.Http
+@inject IHttpContextAccessor httpContextaccessor
+
+@* config *@
+@using Microsoft.Extensions.Configuration
+@inject IConfiguration Configuration
+
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers

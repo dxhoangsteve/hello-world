@@ -1,0 +1,1181 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\CryptoHub\\cryptohub\\Source\\CryptoHub\\BaseSource.Test\\BaseSource.Test.csproj": {}
+  },
+  "projects": {
+    "D:\\CryptoHub\\cryptohub\\Source\\CryptoHub\\BaseSource.AdminApp\\BaseSource.AdminApp.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\CryptoHub\\cryptohub\\Source\\CryptoHub\\BaseSource.AdminApp\\BaseSource.AdminApp.csproj",
+        "projectName": "BaseSource.AdminApp",
+        "projectPath": "D:\\CryptoHub\\cryptohub\\Source\\CryptoHub\\BaseSource.AdminApp\\BaseSource.AdminApp.csproj",
+        "packagesPath": "C:\\Users\\sterb\\.nuget\\packages\\",
+        "outputPath": "D:\\CryptoHub\\cryptohub\\Source\\CryptoHub\\BaseSource.AdminApp\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\sterb\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "D:\\CryptoHub\\cryptohub\\Source\\CryptoHub\\BaseSource.ApiIntegration\\BaseSource.ApiIntegration.csproj": {
+                "projectPath": "D:\\CryptoHub\\cryptohub\\Source\\CryptoHub\\BaseSource.ApiIntegration\\BaseSource.ApiIntegration.csproj"
+              },
+              "D:\\CryptoHub\\cryptohub\\Source\\CryptoHub\\BaseSource.PermissionBased\\BaseSource.PermissionBased.csproj": {
+                "projectPath": "D:\\CryptoHub\\cryptohub\\Source\\CryptoHub\\BaseSource.PermissionBased\\BaseSource.PermissionBased.csproj"
+              },
+              "D:\\CryptoHub\\cryptohub\\Source\\CryptoHub\\BaseSource.Shared\\BaseSource.Shared.csproj": {
+                "projectPath": "D:\\CryptoHub\\cryptohub\\Source\\CryptoHub\\BaseSource.Shared\\BaseSource.Shared.csproj"
+              },
+              "D:\\CryptoHub\\cryptohub\\Source\\CryptoHub\\BaseSource.Utilities\\BaseSource.Utilities.csproj": {
+                "projectPath": "D:\\CryptoHub\\cryptohub\\Source\\CryptoHub\\BaseSource.Utilities\\BaseSource.Utilities.csproj"
+              },
+              "D:\\CryptoHub\\cryptohub\\Source\\CryptoHub\\BaseSource.ViewModels\\BaseSource.ViewModels.csproj": {
+                "projectPath": "D:\\CryptoHub\\cryptohub\\Source\\CryptoHub\\BaseSource.ViewModels\\BaseSource.ViewModels.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "dependencies": {
+            "EPPlus": {
+              "target": "Package",
+              "version": "[8.0.7, )"
+            },
+            "Microsoft.AspNetCore.Authentication.Facebook": {
+              "target": "Package",
+              "version": "[9.0.7, )"
+            },
+            "Microsoft.AspNetCore.Authentication.Google": {
+              "target": "Package",
+              "version": "[9.0.7, )"
+            },
+            "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation": {
+              "target": "Package",
+              "version": "[9.0.7, )"
+            },
+            "Microsoft.IdentityModel.Logging": {
+              "target": "Package",
+              "version": "[8.12.1, )"
+            },
+            "Microsoft.IdentityModel.Tokens": {
+              "target": "Package",
+              "version": "[8.12.1, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "System.IdentityModel.Tokens.Jwt": {
+              "target": "Package",
+              "version": "[8.12.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.303/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\CryptoHub\\cryptohub\\Source\\CryptoHub\\BaseSource.ApiIntegration\\BaseSource.ApiIntegration.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\CryptoHub\\cryptohub\\Source\\CryptoHub\\BaseSource.ApiIntegration\\BaseSource.ApiIntegration.csproj",
+        "projectName": "BaseSource.ApiIntegration",
+        "projectPath": "D:\\CryptoHub\\cryptohub\\Source\\CryptoHub\\BaseSource.ApiIntegration\\BaseSource.ApiIntegration.csproj",
+        "packagesPath": "C:\\Users\\sterb\\.nuget\\packages\\",
+        "outputPath": "D:\\CryptoHub\\cryptohub\\Source\\CryptoHub\\BaseSource.ApiIntegration\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\sterb\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "D:\\CryptoHub\\cryptohub\\Source\\CryptoHub\\BaseSource.PermissionBased\\BaseSource.PermissionBased.csproj": {
+                "projectPath": "D:\\CryptoHub\\cryptohub\\Source\\CryptoHub\\BaseSource.PermissionBased\\BaseSource.PermissionBased.csproj"
+              },
+              "D:\\CryptoHub\\cryptohub\\Source\\CryptoHub\\BaseSource.Shared\\BaseSource.Shared.csproj": {
+                "projectPath": "D:\\CryptoHub\\cryptohub\\Source\\CryptoHub\\BaseSource.Shared\\BaseSource.Shared.csproj"
+              },
+              "D:\\CryptoHub\\cryptohub\\Source\\CryptoHub\\BaseSource.Utilities\\BaseSource.Utilities.csproj": {
+                "projectPath": "D:\\CryptoHub\\cryptohub\\Source\\CryptoHub\\BaseSource.Utilities\\BaseSource.Utilities.csproj"
+              },
+              "D:\\CryptoHub\\cryptohub\\Source\\CryptoHub\\BaseSource.ViewModels\\BaseSource.ViewModels.csproj": {
+                "projectPath": "D:\\CryptoHub\\cryptohub\\Source\\CryptoHub\\BaseSource.ViewModels\\BaseSource.ViewModels.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "dependencies": {
+            "Microsoft.Extensions.Configuration": {
+              "target": "Package",
+              "version": "[9.0.7, )"
+            },
+            "Microsoft.Extensions.Http": {
+              "target": "Package",
+              "version": "[9.0.7, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.303/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\CryptoHub\\cryptohub\\Source\\CryptoHub\\BaseSource.BackendApi.Services\\BaseSource.BackendApi.Services.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\CryptoHub\\cryptohub\\Source\\CryptoHub\\BaseSource.BackendApi.Services\\BaseSource.BackendApi.Services.csproj",
+        "projectName": "BaseSource.BackendApi.Services",
+        "projectPath": "D:\\CryptoHub\\cryptohub\\Source\\CryptoHub\\BaseSource.BackendApi.Services\\BaseSource.BackendApi.Services.csproj",
+        "packagesPath": "C:\\Users\\sterb\\.nuget\\packages\\",
+        "outputPath": "D:\\CryptoHub\\cryptohub\\Source\\CryptoHub\\BaseSource.BackendApi.Services\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\sterb\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "D:\\CryptoHub\\cryptohub\\Source\\CryptoHub\\BaseSource.Data\\BaseSource.Data.csproj": {
+                "projectPath": "D:\\CryptoHub\\cryptohub\\Source\\CryptoHub\\BaseSource.Data\\BaseSource.Data.csproj"
+              },
+              "D:\\CryptoHub\\cryptohub\\Source\\CryptoHub\\BaseSource.Shared\\BaseSource.Shared.csproj": {
+                "projectPath": "D:\\CryptoHub\\cryptohub\\Source\\CryptoHub\\BaseSource.Shared\\BaseSource.Shared.csproj"
+              },
+              "D:\\CryptoHub\\cryptohub\\Source\\CryptoHub\\BaseSource.Utilities\\BaseSource.Utilities.csproj": {
+                "projectPath": "D:\\CryptoHub\\cryptohub\\Source\\CryptoHub\\BaseSource.Utilities\\BaseSource.Utilities.csproj"
+              },
+              "D:\\CryptoHub\\cryptohub\\Source\\CryptoHub\\BaseSource.ViewModels\\BaseSource.ViewModels.csproj": {
+                "projectPath": "D:\\CryptoHub\\cryptohub\\Source\\CryptoHub\\BaseSource.ViewModels\\BaseSource.ViewModels.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "dependencies": {
+            "Cronos": {
+              "target": "Package",
+              "version": "[0.11.0, )"
+            },
+            "MailKit": {
+              "target": "Package",
+              "version": "[4.13.0, )"
+            },
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[9.0.7, )"
+            },
+            "MimeKit": {
+              "target": "Package",
+              "version": "[4.13.0, )"
+            },
+            "UnitOfWork.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.2, )"
+            },
+            "X.PagedList": {
+              "target": "Package",
+              "version": "[10.5.7, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.303/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\CryptoHub\\cryptohub\\Source\\CryptoHub\\BaseSource.BackendApi\\BaseSource.BackendApi.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\CryptoHub\\cryptohub\\Source\\CryptoHub\\BaseSource.BackendApi\\BaseSource.BackendApi.csproj",
+        "projectName": "BaseSource.BackendApi",
+        "projectPath": "D:\\CryptoHub\\cryptohub\\Source\\CryptoHub\\BaseSource.BackendApi\\BaseSource.BackendApi.csproj",
+        "packagesPath": "C:\\Users\\sterb\\.nuget\\packages\\",
+        "outputPath": "D:\\CryptoHub\\cryptohub\\Source\\CryptoHub\\BaseSource.BackendApi\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\sterb\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "D:\\CryptoHub\\cryptohub\\Source\\CryptoHub\\BaseSource.BackendApi.Services\\BaseSource.BackendApi.Services.csproj": {
+                "projectPath": "D:\\CryptoHub\\cryptohub\\Source\\CryptoHub\\BaseSource.BackendApi.Services\\BaseSource.BackendApi.Services.csproj"
+              },
+              "D:\\CryptoHub\\cryptohub\\Source\\CryptoHub\\BaseSource.Data\\BaseSource.Data.csproj": {
+                "projectPath": "D:\\CryptoHub\\cryptohub\\Source\\CryptoHub\\BaseSource.Data\\BaseSource.Data.csproj"
+              },
+              "D:\\CryptoHub\\cryptohub\\Source\\CryptoHub\\BaseSource.PermissionBased\\BaseSource.PermissionBased.csproj": {
+                "projectPath": "D:\\CryptoHub\\cryptohub\\Source\\CryptoHub\\BaseSource.PermissionBased\\BaseSource.PermissionBased.csproj"
+              },
+              "D:\\CryptoHub\\cryptohub\\Source\\CryptoHub\\BaseSource.Shared\\BaseSource.Shared.csproj": {
+                "projectPath": "D:\\CryptoHub\\cryptohub\\Source\\CryptoHub\\BaseSource.Shared\\BaseSource.Shared.csproj"
+              },
+              "D:\\CryptoHub\\cryptohub\\Source\\CryptoHub\\BaseSource.Utilities\\BaseSource.Utilities.csproj": {
+                "projectPath": "D:\\CryptoHub\\cryptohub\\Source\\CryptoHub\\BaseSource.Utilities\\BaseSource.Utilities.csproj"
+              },
+              "D:\\CryptoHub\\cryptohub\\Source\\CryptoHub\\BaseSource.ViewModels\\BaseSource.ViewModels.csproj": {
+                "projectPath": "D:\\CryptoHub\\cryptohub\\Source\\CryptoHub\\BaseSource.ViewModels\\BaseSource.ViewModels.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "dependencies": {
+            "EPPlus": {
+              "target": "Package",
+              "version": "[8.0.7, )"
+            },
+            "ElmahCore": {
+              "target": "Package",
+              "version": "[2.1.2, )"
+            },
+            "GoogleAuthenticator": {
+              "target": "Package",
+              "version": "[3.2.0, )"
+            },
+            "MailKit": {
+              "target": "Package",
+              "version": "[4.13.0, )"
+            },
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[9.0.7, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "MimeKit": {
+              "target": "Package",
+              "version": "[4.13.0, )"
+            },
+            "Serilog": {
+              "target": "Package",
+              "version": "[4.3.0, )"
+            },
+            "Serilog.Extensions.Hosting": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "Serilog.Sinks.Async": {
+              "target": "Package",
+              "version": "[2.1.0, )"
+            },
+            "Serilog.Sinks.File": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[9.0.3, )"
+            },
+            "Swashbuckle.AspNetCore.Annotations": {
+              "target": "Package",
+              "version": "[9.0.3, )"
+            },
+            "X.PagedList": {
+              "target": "Package",
+              "version": "[10.5.7, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.303/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\CryptoHub\\cryptohub\\Source\\CryptoHub\\BaseSource.Data\\BaseSource.Data.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\CryptoHub\\cryptohub\\Source\\CryptoHub\\BaseSource.Data\\BaseSource.Data.csproj",
+        "projectName": "BaseSource.Data",
+        "projectPath": "D:\\CryptoHub\\cryptohub\\Source\\CryptoHub\\BaseSource.Data\\BaseSource.Data.csproj",
+        "packagesPath": "C:\\Users\\sterb\\.nuget\\packages\\",
+        "outputPath": "D:\\CryptoHub\\cryptohub\\Source\\CryptoHub\\BaseSource.Data\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\sterb\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "D:\\CryptoHub\\cryptohub\\Source\\CryptoHub\\BaseSource.Shared\\BaseSource.Shared.csproj": {
+                "projectPath": "D:\\CryptoHub\\cryptohub\\Source\\CryptoHub\\BaseSource.Shared\\BaseSource.Shared.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[9.0.7, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[9.0.7, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[9.0.7, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[9.0.7, )"
+            },
+            "Microsoft.Extensions.Configuration": {
+              "target": "Package",
+              "version": "[9.0.7, )"
+            },
+            "Microsoft.Extensions.Configuration.FileExtensions": {
+              "target": "Package",
+              "version": "[9.0.7, )"
+            },
+            "Microsoft.Extensions.Configuration.Json": {
+              "target": "Package",
+              "version": "[9.0.7, )"
+            },
+            "X.PagedList": {
+              "target": "Package",
+              "version": "[10.5.7, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.303/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\CryptoHub\\cryptohub\\Source\\CryptoHub\\BaseSource.PermissionBased\\BaseSource.PermissionBased.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\CryptoHub\\cryptohub\\Source\\CryptoHub\\BaseSource.PermissionBased\\BaseSource.PermissionBased.csproj",
+        "projectName": "BaseSource.PermissionBased",
+        "projectPath": "D:\\CryptoHub\\cryptohub\\Source\\CryptoHub\\BaseSource.PermissionBased\\BaseSource.PermissionBased.csproj",
+        "packagesPath": "C:\\Users\\sterb\\.nuget\\packages\\",
+        "outputPath": "D:\\CryptoHub\\cryptohub\\Source\\CryptoHub\\BaseSource.PermissionBased\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\sterb\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "D:\\CryptoHub\\cryptohub\\Source\\CryptoHub\\BaseSource.Data\\BaseSource.Data.csproj": {
+                "projectPath": "D:\\CryptoHub\\cryptohub\\Source\\CryptoHub\\BaseSource.Data\\BaseSource.Data.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Authorization": {
+              "target": "Package",
+              "version": "[9.0.7, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.303/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\CryptoHub\\cryptohub\\Source\\CryptoHub\\BaseSource.Shared\\BaseSource.Shared.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\CryptoHub\\cryptohub\\Source\\CryptoHub\\BaseSource.Shared\\BaseSource.Shared.csproj",
+        "projectName": "BaseSource.Shared",
+        "projectPath": "D:\\CryptoHub\\cryptohub\\Source\\CryptoHub\\BaseSource.Shared\\BaseSource.Shared.csproj",
+        "packagesPath": "C:\\Users\\sterb\\.nuget\\packages\\",
+        "outputPath": "D:\\CryptoHub\\cryptohub\\Source\\CryptoHub\\BaseSource.Shared\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\sterb\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "D:\\CryptoHub\\cryptohub\\Source\\CryptoHub\\Resources\\Resources.csproj": {
+                "projectPath": "D:\\CryptoHub\\cryptohub\\Source\\CryptoHub\\Resources\\Resources.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "dependencies": {
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.303/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\CryptoHub\\cryptohub\\Source\\CryptoHub\\BaseSource.Test\\BaseSource.Test.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\CryptoHub\\cryptohub\\Source\\CryptoHub\\BaseSource.Test\\BaseSource.Test.csproj",
+        "projectName": "BaseSource.Test",
+        "projectPath": "D:\\CryptoHub\\cryptohub\\Source\\CryptoHub\\BaseSource.Test\\BaseSource.Test.csproj",
+        "packagesPath": "C:\\Users\\sterb\\.nuget\\packages\\",
+        "outputPath": "D:\\CryptoHub\\cryptohub\\Source\\CryptoHub\\BaseSource.Test\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\sterb\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "D:\\CryptoHub\\cryptohub\\Source\\CryptoHub\\BaseSource.AdminApp\\BaseSource.AdminApp.csproj": {
+                "projectPath": "D:\\CryptoHub\\cryptohub\\Source\\CryptoHub\\BaseSource.AdminApp\\BaseSource.AdminApp.csproj"
+              },
+              "D:\\CryptoHub\\cryptohub\\Source\\CryptoHub\\BaseSource.ApiIntegration\\BaseSource.ApiIntegration.csproj": {
+                "projectPath": "D:\\CryptoHub\\cryptohub\\Source\\CryptoHub\\BaseSource.ApiIntegration\\BaseSource.ApiIntegration.csproj"
+              },
+              "D:\\CryptoHub\\cryptohub\\Source\\CryptoHub\\BaseSource.BackendApi.Services\\BaseSource.BackendApi.Services.csproj": {
+                "projectPath": "D:\\CryptoHub\\cryptohub\\Source\\CryptoHub\\BaseSource.BackendApi.Services\\BaseSource.BackendApi.Services.csproj"
+              },
+              "D:\\CryptoHub\\cryptohub\\Source\\CryptoHub\\BaseSource.BackendApi\\BaseSource.BackendApi.csproj": {
+                "projectPath": "D:\\CryptoHub\\cryptohub\\Source\\CryptoHub\\BaseSource.BackendApi\\BaseSource.BackendApi.csproj"
+              },
+              "D:\\CryptoHub\\cryptohub\\Source\\CryptoHub\\BaseSource.Data\\BaseSource.Data.csproj": {
+                "projectPath": "D:\\CryptoHub\\cryptohub\\Source\\CryptoHub\\BaseSource.Data\\BaseSource.Data.csproj"
+              },
+              "D:\\CryptoHub\\cryptohub\\Source\\CryptoHub\\BaseSource.PermissionBased\\BaseSource.PermissionBased.csproj": {
+                "projectPath": "D:\\CryptoHub\\cryptohub\\Source\\CryptoHub\\BaseSource.PermissionBased\\BaseSource.PermissionBased.csproj"
+              },
+              "D:\\CryptoHub\\cryptohub\\Source\\CryptoHub\\BaseSource.Shared\\BaseSource.Shared.csproj": {
+                "projectPath": "D:\\CryptoHub\\cryptohub\\Source\\CryptoHub\\BaseSource.Shared\\BaseSource.Shared.csproj"
+              },
+              "D:\\CryptoHub\\cryptohub\\Source\\CryptoHub\\BaseSource.Utilities\\BaseSource.Utilities.csproj": {
+                "projectPath": "D:\\CryptoHub\\cryptohub\\Source\\CryptoHub\\BaseSource.Utilities\\BaseSource.Utilities.csproj"
+              },
+              "D:\\CryptoHub\\cryptohub\\Source\\CryptoHub\\BaseSource.ViewModels\\BaseSource.ViewModels.csproj": {
+                "projectPath": "D:\\CryptoHub\\cryptohub\\Source\\CryptoHub\\BaseSource.ViewModels\\BaseSource.ViewModels.csproj"
+              },
+              "D:\\CryptoHub\\cryptohub\\Source\\CryptoHub\\BaseSource.WebApp\\BaseSource.WebApp.csproj": {
+                "projectPath": "D:\\CryptoHub\\cryptohub\\Source\\CryptoHub\\BaseSource.WebApp\\BaseSource.WebApp.csproj"
+              },
+              "D:\\CryptoHub\\cryptohub\\Source\\CryptoHub\\Resources\\Resources.csproj": {
+                "projectPath": "D:\\CryptoHub\\cryptohub\\Source\\CryptoHub\\Resources\\Resources.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "dependencies": {
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[17.12.0, )"
+            },
+            "coverlet.collector": {
+              "target": "Package",
+              "version": "[6.0.2, )"
+            },
+            "xunit": {
+              "target": "Package",
+              "version": "[2.9.2, )"
+            },
+            "xunit.runner.visualstudio": {
+              "target": "Package",
+              "version": "[2.8.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.303/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\CryptoHub\\cryptohub\\Source\\CryptoHub\\BaseSource.Utilities\\BaseSource.Utilities.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\CryptoHub\\cryptohub\\Source\\CryptoHub\\BaseSource.Utilities\\BaseSource.Utilities.csproj",
+        "projectName": "BaseSource.Utilities",
+        "projectPath": "D:\\CryptoHub\\cryptohub\\Source\\CryptoHub\\BaseSource.Utilities\\BaseSource.Utilities.csproj",
+        "packagesPath": "C:\\Users\\sterb\\.nuget\\packages\\",
+        "outputPath": "D:\\CryptoHub\\cryptohub\\Source\\CryptoHub\\BaseSource.Utilities\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\sterb\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "D:\\CryptoHub\\cryptohub\\Source\\CryptoHub\\BaseSource.PermissionBased\\BaseSource.PermissionBased.csproj": {
+                "projectPath": "D:\\CryptoHub\\cryptohub\\Source\\CryptoHub\\BaseSource.PermissionBased\\BaseSource.PermissionBased.csproj"
+              },
+              "D:\\CryptoHub\\cryptohub\\Source\\CryptoHub\\BaseSource.ViewModels\\BaseSource.ViewModels.csproj": {
+                "projectPath": "D:\\CryptoHub\\cryptohub\\Source\\CryptoHub\\BaseSource.ViewModels\\BaseSource.ViewModels.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "dependencies": {
+            "HtmlAgilityPack": {
+              "target": "Package",
+              "version": "[1.12.1, )"
+            },
+            "HtmlSanitizer": {
+              "target": "Package",
+              "version": "[9.0.886, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.303/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\CryptoHub\\cryptohub\\Source\\CryptoHub\\BaseSource.ViewModels\\BaseSource.ViewModels.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\CryptoHub\\cryptohub\\Source\\CryptoHub\\BaseSource.ViewModels\\BaseSource.ViewModels.csproj",
+        "projectName": "BaseSource.ViewModels",
+        "projectPath": "D:\\CryptoHub\\cryptohub\\Source\\CryptoHub\\BaseSource.ViewModels\\BaseSource.ViewModels.csproj",
+        "packagesPath": "C:\\Users\\sterb\\.nuget\\packages\\",
+        "outputPath": "D:\\CryptoHub\\cryptohub\\Source\\CryptoHub\\BaseSource.ViewModels\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\sterb\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "D:\\CryptoHub\\cryptohub\\Source\\CryptoHub\\BaseSource.Shared\\BaseSource.Shared.csproj": {
+                "projectPath": "D:\\CryptoHub\\cryptohub\\Source\\CryptoHub\\BaseSource.Shared\\BaseSource.Shared.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "dependencies": {
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.303/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\CryptoHub\\cryptohub\\Source\\CryptoHub\\BaseSource.WebApp\\BaseSource.WebApp.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\CryptoHub\\cryptohub\\Source\\CryptoHub\\BaseSource.WebApp\\BaseSource.WebApp.csproj",
+        "projectName": "BaseSource.WebApp",
+        "projectPath": "D:\\CryptoHub\\cryptohub\\Source\\CryptoHub\\BaseSource.WebApp\\BaseSource.WebApp.csproj",
+        "packagesPath": "C:\\Users\\sterb\\.nuget\\packages\\",
+        "outputPath": "D:\\CryptoHub\\cryptohub\\Source\\CryptoHub\\BaseSource.WebApp\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\sterb\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "D:\\CryptoHub\\cryptohub\\Source\\CryptoHub\\BaseSource.ApiIntegration\\BaseSource.ApiIntegration.csproj": {
+                "projectPath": "D:\\CryptoHub\\cryptohub\\Source\\CryptoHub\\BaseSource.ApiIntegration\\BaseSource.ApiIntegration.csproj"
+              },
+              "D:\\CryptoHub\\cryptohub\\Source\\CryptoHub\\BaseSource.Shared\\BaseSource.Shared.csproj": {
+                "projectPath": "D:\\CryptoHub\\cryptohub\\Source\\CryptoHub\\BaseSource.Shared\\BaseSource.Shared.csproj"
+              },
+              "D:\\CryptoHub\\cryptohub\\Source\\CryptoHub\\BaseSource.Utilities\\BaseSource.Utilities.csproj": {
+                "projectPath": "D:\\CryptoHub\\cryptohub\\Source\\CryptoHub\\BaseSource.Utilities\\BaseSource.Utilities.csproj"
+              },
+              "D:\\CryptoHub\\cryptohub\\Source\\CryptoHub\\BaseSource.ViewModels\\BaseSource.ViewModels.csproj": {
+                "projectPath": "D:\\CryptoHub\\cryptohub\\Source\\CryptoHub\\BaseSource.ViewModels\\BaseSource.ViewModels.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Authentication.Facebook": {
+              "target": "Package",
+              "version": "[9.0.7, )"
+            },
+            "Microsoft.AspNetCore.Authentication.Google": {
+              "target": "Package",
+              "version": "[9.0.7, )"
+            },
+            "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation": {
+              "target": "Package",
+              "version": "[9.0.7, )"
+            },
+            "Microsoft.IdentityModel.Logging": {
+              "target": "Package",
+              "version": "[8.12.1, )"
+            },
+            "Microsoft.IdentityModel.Tokens": {
+              "target": "Package",
+              "version": "[8.12.1, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "System.IdentityModel.Tokens.Jwt": {
+              "target": "Package",
+              "version": "[8.12.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.303/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\CryptoHub\\cryptohub\\Source\\CryptoHub\\Resources\\Resources.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\CryptoHub\\cryptohub\\Source\\CryptoHub\\Resources\\Resources.csproj",
+        "projectName": "Resources",
+        "projectPath": "D:\\CryptoHub\\cryptohub\\Source\\CryptoHub\\Resources\\Resources.csproj",
+        "packagesPath": "C:\\Users\\sterb\\.nuget\\packages\\",
+        "outputPath": "D:\\CryptoHub\\cryptohub\\Source\\CryptoHub\\Resources\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\sterb\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.303/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

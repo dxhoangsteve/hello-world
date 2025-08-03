@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "DSwTjyhqFN4=",
+  "success": true,
+  "projectFilePath": "D:\\CryptoHub\\cryptohub\\Source\\CryptoHub\\BaseSource.Shared\\BaseSource.Shared.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\sterb\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

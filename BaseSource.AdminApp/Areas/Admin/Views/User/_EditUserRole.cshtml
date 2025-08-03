@@ -1,0 +1,24 @@
+﻿@model RoleAssignVm
+
+@using (Html.BeginForm("EditUserRole", "User", FormMethod.Post, new { role = "form", @id = "form-edit-role" }))
+{
+    @Html.AntiForgeryToken()
+    @Html.HiddenFor(model => model.Id)
+
+    @for (var i = 0; i < Model.Roles.Count; i++)
+    {
+        <div>
+            <div class="form-check">
+                <input type="checkbox" class="form-check-input" asp-for="Roles[i].Selected">
+                <label asp-for="Roles[i].Selected" class="form-check-label">@Model.Roles[i].Name</label>
+            </div>
+            <input type="hidden" asp-for="Roles[i].Id" />
+            <input type="hidden" asp-for="Roles[i].Name" />
+        </div>
+    }
+
+    <div class="text-end">
+        <button type="button" data-bs-dismiss="modal" class="btn btn-outline-dark">Cancel</button>
+        <button type="submit" class="gap-2 btn btn-primary">Save change</button>
+    </div>
+}

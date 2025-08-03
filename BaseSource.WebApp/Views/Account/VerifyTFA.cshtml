@@ -1,0 +1,38 @@
+﻿@model VerifyTFAViewModel
+@{
+    ViewBag.Title = "Verify";
+    Layout = "/Views/Shared/_LayoutLogin.cshtml";
+}
+
+<div class="row justify-content-center align-items-center my-5">
+    <div class="col-lg-6">
+        <div class="card common-card p-sm-3">
+            <div class="card-body">
+                <h3 class="text-center mb-3">@ViewData["Title"]</h3>
+
+                <form action="/Account/VerifyTFA?returnUrl=@Model.ReturnUrl" method="post">
+                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" asp-for="Code" placeholder="" autocomplete="off">
+                        <label asp-for="Code">Code</label>
+                        <span asp-validation-for="Code" class="text-danger"></span>
+                    </div>
+
+                    <div class="mb-3">
+                        <button type="submit" class="gap-2 btn btn-primary btn-lg w-100">Xác nhận</button>
+                    </div>
+
+                    <div class="mb-3">
+                        <p>
+                            Đã có tài khoản? <a href="/Account/Login">Đăng nhập</a>
+                        </p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+}

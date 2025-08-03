@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Cronos" Version="0.11.0" />
+    <PackageReference Include="MailKit" Version="4.13.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="9.0.7" />
+    <PackageReference Include="MimeKit" Version="4.13.0" />
+    <PackageReference Include="UnitOfWork.EntityFrameworkCore" Version="8.0.2" />
+    <PackageReference Include="X.PagedList" Version="10.5.7" />
+  </ItemGroup>
+  
+  <ItemGroup>
+    <ProjectReference Include="..\BaseSource.Data\BaseSource.Data.csproj" />
+    <ProjectReference Include="..\BaseSource.Shared\BaseSource.Shared.csproj" />
+    <ProjectReference Include="..\BaseSource.Utilities\BaseSource.Utilities.csproj" />
+    <ProjectReference Include="..\BaseSource.ViewModels\BaseSource.ViewModels.csproj" />
+  </ItemGroup>
+  
+  <ItemGroup>
+    <Folder Include="Services\CronService\" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,26 @@
+﻿@model DashboardVm
+@{
+    ViewData["Title"] = "Dashboard";
+}
+
+<div class="row">
+    <div class="col-xl-3 col-md-6 mb-3">
+        <div class="card border-start-lg border-start-primary h-100">
+            <div class="card-body">
+                <div class="d-flex align-items-center">
+                    <div class="flex-grow-1">
+                        <div class="small fw-bold text-primary mb-1">Số dư</div>
+                        <div class="h5" data-binding="balance">@Utility.FormatNumber(Model.Balance)</div>
+                    </div>
+                    <div class="ms-2"><i class="fas fa-dollar fa-2x text-gray-200"></i></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        $(".home-nav").addClass("active");
+    </script>
+}

@@ -1,0 +1,27 @@
+{
+  "version": "1.0",
+  "defaultProvider": "unpkg",
+  "libraries": [
+    {
+      "library": "bootstrap@5.2.0",
+      "destination": "wwwroot/lib/bootstrap/dist/",
+      "files": [
+        "dist/css/bootstrap.css",
+        "dist/css/bootstrap.min.css",
+        "dist/js/bootstrap.bundle.js",
+        "dist/js/bootstrap.bundle.min.js",
+        "dist/js/bootstrap.js",
+        "dist/js/bootstrap.min.js"
+      ]
+    },
+    {
+      "provider": "cdnjs",
+      "library": "microsoft-signalr@7.0.4",
+      "destination": "wwwroot/lib/signalr/"
+    },
+    {
+      "library": "swiper@10.3.1",
+      "destination": "wwwroot/lib/swiper/"
+    }
+  ]
+}

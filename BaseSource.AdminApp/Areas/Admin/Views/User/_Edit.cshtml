@@ -1,0 +1,136 @@
+﻿@model EditUserAdminVm
+
+<form asp-action="Edit" data-name="ajaxForm" method="post">
+    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+    <input asp-for="Id" type="hidden" />
+
+    <div class="row">
+        <div class="col-sm-6">
+            <div class="mb-3">
+                <label asp-for="CustomId" class="form-label"></label>
+                <input asp-for="CustomId" class="form-control " />
+                <span asp-validation-for="CustomId" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="mb-3">
+                <label asp-for="UserName" class="form-label"></label>
+                <input asp-for="UserName" class="form-control " />
+                <span asp-validation-for="UserName" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="mb-3">
+                <label asp-for="Password" class="form-label"></label>
+                <input asp-for="Password" class="form-control " />
+                <span asp-validation-for="Password" class="text-danger"></span>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-6">
+            <div class="mb-3">
+                <label asp-for="LastName" class="form-label"></label>
+                <input asp-for="LastName" class="form-control " />
+                <span asp-validation-for="LastName" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="mb-3">
+                <label asp-for="FirstName" class="form-label"></label>
+                <input asp-for="FirstName" class="form-control " />
+                <span asp-validation-for="FirstName" class="text-danger"></span>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-6">
+            <div class="mb-3">
+                <label asp-for="Email" class="form-label"></label>
+                <input asp-for="Email" class="form-control " />
+                <span asp-validation-for="Email" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="mb-3">
+                <label asp-for="PhoneNumber" class="form-label"></label>
+                <input asp-for="PhoneNumber" class="form-control " />
+                <span asp-validation-for="PhoneNumber" class="text-danger"></span>
+            </div>
+        </div>
+    </div>
+    @* <div class="row">
+    <div class="col-sm-12">
+    <div class="mb-3">
+    <label>Địa chỉ</label>
+    <textarea type="text" class="form-control" rows="2" asp-for="Address" placeholder="Địa chỉ"></textarea>
+    </div>
+    </div>
+    </div>
+    <div class="row">
+    <div class="col-sm-4">
+    <div class="mb-3">
+    <label>City</label>
+    <input type="text" class="form-control" asp-for="City" placeholder="City" />
+    </div>
+    </div>
+    <div class="col-sm-4">
+    <div class="mb-3">
+    <label>State</label>
+    <input type="text" class="form-control" asp-for="State" placeholder="State" />
+    </div>
+    </div>
+    <div class="col-sm-4">
+    <div class="mb-3">
+    <label>Zip/Postal</label>
+    <input type="text" class="form-control" asp-for="ZipCode" placeholder="Zip/Postal" />
+    </div>
+    </div>
+    </div> *@
+
+
+    @*<div class="row">
+    <div class="col-6">
+    <label>Trạng thái</label>
+    @if (Model.LockoutEndDateUtc != null)
+    {
+    <button type="button" class="btn btn-block bg-gradient-danger">Bị khóa</button>
+    }
+    else
+    {
+    <button type="button" class="btn btn-block bg-gradient-success">Hoạt động</button>
+    }
+    </div>
+    <div class="col-6">
+    <label>Email Verification</label>
+    @if (Model.EmailConfirmed)
+    {
+    <button type="button" class="btn btn-block bg-gradient-success">Verified</button>
+    }
+    else
+    {
+    <button type="button" class="btn btn-block bg-gradient-danger">Deactive</button>
+    }
+    </div>
+
+
+    </div>*@
+    @*<div class="row">
+    <div class="col-6">
+    <label>2FA Status</label>
+    <button type="button" class="btn btn-block bg-gradient-danger">Deactive</button>
+    </div>
+    <div class="col-6">
+    <label>2FA Verification</label>
+    <button type="button" class="btn btn-block bg-gradient-danger">Deactive</button>
+    </div>
+    </div>*@
+    <div class="row mt-2">
+        <div class="col-12">
+            @if (User.IsInPermission(Permissions.User.Edit))
+            {
+                <button type="submit" class="gap-2 btn btn-primary">Lưu lại</button>
+            }
+        </div>
+    </div>
+</form>

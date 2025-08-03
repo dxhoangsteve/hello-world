@@ -1,0 +1,89 @@
+﻿body,
+html {
+  font-size: 16px;
+}
+
+/*@media (min-width: 1440px) {
+    .container {
+        max-width: 1400px;
+    }
+}*/
+
+#toast-container > div {
+  opacity: 1;
+  box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15) !important;
+}
+
+.margin-nav {
+  margin-top: 120px;
+}
+
+.square-image-wrapper {
+  aspect-ratio: 1 / 1; /* Giữ tỷ lệ 1:1 */
+  overflow: hidden;
+  width: 100%; /* Chiếm hết chiều ngang của cột cha */
+}
+
+.square-image-wrapper img {
+  object-fit: cover; /* Cắt ảnh cho vừa khung */
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.square-box {
+  width: 100%;
+  aspect-ratio: 1 / 1; /* Giữ vuông */
+  background-color: #f0f0f0; /* màu nền nếu ảnh không phủ hết */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.square-box img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* nền chung cho trang account và dashboard user */
+
+body {
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
+  background: linear-gradient(
+    135deg,
+    #f0f9ff 0%,
+    #e0f2fe 30%,
+    #f0fdf4 70%,
+    #fefce8 100%
+  );
+  color: #1e293b;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.common-card {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(59, 130, 246, 0.2);
+  border-radius: 25px;
+  padding: 3rem;
+  width: 100%;
+  max-width: 450px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1), 0 8px 25px rgba(34, 197, 94, 0.1);
+  animation: slideIn 0.8s ease-out;
+}
+
+.common-card h3,
+.common-card label,
+.common-card p {
+  color: rgb(0, 0, 0) !important;
+}
+
+.common-card a {
+  color: #00d4ff !important;
+}

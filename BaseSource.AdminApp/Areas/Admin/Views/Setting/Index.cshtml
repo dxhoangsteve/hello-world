@@ -1,0 +1,103 @@
+﻿@model ConfigViewModel
+@{
+    ViewBag.Title = "Update Config";
+}
+
+@using (Html.BeginForm("Index", "Setting", FormMethod.Post, null))
+{
+    @Html.AntiForgeryToken()
+
+    <div class="card shadow mb-4">
+        <div class="card-header py-3 d-sm-flex align-items-center justify-content-between">
+            <h6 class="m-0 font-weight-bold">@ViewBag.Title</h6>
+            <button type="submit" class="btn btn-primary shadow-sm"><i class="fas fa-save fa-fw text-white-50"></i> Save change</button>
+        </div>
+        <div class="card-body">
+            <nav class="mb-4">
+                <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                    <button class="nav-link active" id="nav-doisoatve-tab" data-bs-toggle="tab" data-bs-target="#nav-doisoatve" type="button" role="tab" aria-controls="nav-doisoatve" aria-selected="true">xxx</button>
+                    <button class="nav-link" id="nav-system-tab" data-bs-toggle="tab" data-bs-target="#nav-system" type="button" role="tab" aria-controls="nav-system" aria-selected="false">Hệ thống</button>
+                </div>
+            </nav>
+            <div class="tab-content" id="nav-tabContent">
+                <div class="tab-pane fade show active" id="nav-doisoatve" role="tabpanel" aria-labelledby="nav-doisoatve-tab" tabindex="0">
+
+
+                </div>
+                <div class="tab-pane fade" id="nav-system" role="tabpanel" aria-labelledby="nav-system-tab" tabindex="0">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-6">
+                            @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+                            <div class="mb-3 row">
+                                @Html.LabelFor(model => model.EmailSender, htmlAttributes: new { @class = "col-lg-4" })
+                                <div class="col-lg-8">
+                                    @Html.EditorFor(model => model.EmailSender, new { htmlAttributes = new { @class = "form-control" } })
+                                    @Html.ValidationMessageFor(model => model.EmailSender, "", new { @class = "text-danger" })
+                                </div>
+                            </div>
+                            <div class="mb-3 row">
+                                @Html.LabelFor(model => model.EmailSenderPassword, htmlAttributes: new { @class = "col-lg-4" })
+                                <div class="col-lg-8">
+                                    @Html.EditorFor(model => model.EmailSenderPassword, new { htmlAttributes = new { @class = "form-control" } })
+                                    @Html.ValidationMessageFor(model => model.EmailSenderPassword, "", new { @class = "text-danger" })
+                                </div>
+                            </div>
+
+                            <div class="mb-3 row">
+                                @Html.LabelFor(model => model.EmailHost, htmlAttributes: new { @class = "col-lg-4" })
+                                <div class="col-lg-8">
+                                    @Html.EditorFor(model => model.EmailHost, new { htmlAttributes = new { @class = "form-control" } })
+                                    @Html.ValidationMessageFor(model => model.EmailHost, "", new { @class = "text-danger" })
+                                </div>
+                            </div>
+                            <div class="mb-3 row">
+                                @Html.LabelFor(model => model.EmailPort, htmlAttributes: new { @class = "col-lg-4" })
+                                <div class="col-lg-8">
+                                    @Html.EditorFor(model => model.EmailPort, new { htmlAttributes = new { @class = "form-control" } })
+                                    @Html.ValidationMessageFor(model => model.EmailPort, "", new { @class = "text-danger" })
+                                </div>
+                            </div>
+                            <div class="mb-3 row">
+                                @Html.LabelFor(model => model.EmailSSL, htmlAttributes: new { @class = "col-lg-4" })
+                                <div class="col-lg-8">
+                                    @Html.EditorFor(model => model.EmailSSL, new { htmlAttributes = new { @class = "form-control" } })
+                                    @Html.ValidationMessageFor(model => model.EmailSSL, "", new { @class = "text-danger" })
+                                </div>
+                            </div>
+                            <hr />
+
+                            <div class="mb-3 row">
+                                @Html.LabelFor(model => model.ContactPhone, htmlAttributes: new { @class = "col-lg-4" })
+                                <div class="col-lg-8">
+                                    @Html.EditorFor(model => model.ContactPhone, new { htmlAttributes = new { @class = "form-control" } })
+                                    @Html.ValidationMessageFor(model => model.ContactPhone, "", new { @class = "text-danger" })
+                                </div>
+                            </div>
+                            <div class="mb-3 row">
+                                @Html.LabelFor(model => model.ContactEmail, htmlAttributes: new { @class = "col-lg-4" })
+                                <div class="col-lg-8">
+                                    @Html.EditorFor(model => model.ContactEmail, new { htmlAttributes = new { @class = "form-control" } })
+                                    @Html.ValidationMessageFor(model => model.ContactEmail, "", new { @class = "text-danger" })
+                                </div>
+                            </div>
+                            <div class="mb-3 row">
+                                @Html.LabelFor(model => model.SupportUrl, htmlAttributes: new { @class = "col-lg-4" })
+                                <div class="col-lg-8">
+                                    @Html.EditorFor(model => model.SupportUrl, new { htmlAttributes = new { @class = "form-control" } })
+                                    @Html.ValidationMessageFor(model => model.SupportUrl, "", new { @class = "text-danger" })
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+
+@section Scripts{
+    <script>
+        $(".setting-nav").addClass("active");
+    </script>
+}

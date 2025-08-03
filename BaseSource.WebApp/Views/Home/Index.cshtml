@@ -1,0 +1,509 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="align-items-center bg-dark d-flex hero-header-classic overflow-hidden position-relative">
+    <!-- start background image -->
+    <div class="bg-image-overlay bg-gradient-vertical js-bg-image bg-cover bottom-0 end-0 position-absolute start-0 top-0" data-image-src="/images/home/lg-verify.jpg"></div>
+    <!-- end /. background image -->
+    <div class="container position-relative z-1">
+        @* <div class="hero-header-subtitle text-center text-white text-uppercase mb-3">WE ARE #1 ON THE MARKET</div> *@
+        <h1 class="display-4 fw-bold hero-header_title text-capitalize text-white text-center mb-5">Xác minh doanh nghiệp<br /> @* <span class="font-caveat text-span">Navigate</span> *@ tạo dựng niềm tin</h1>
+        <div class="lead mb-4 mb-sm-5 text-center text-white">
+            Chúng tôi giúp bạn tra cứu và xác minh thông tin doanh nghiệp chỉ với một cú click — nhanh chóng, chính xác và toàn diện. <br />
+            Minh bạch là nền tảng của niềm tin. Dù là khách hàng, đối tác hay nhà đầu tư, bạn đều xứng đáng có được sự rõ ràng trước khi quyết định.
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-lg-10">
+                <!-- start search content -->
+                <form method="get" action="@Url.Action("Index", "Company")">
+                    <div class="border-0 card d-flex flex-md-row position-relative search-wrapper">
+                        <div class="vertical-divider"></div>
+                        <div class="align-items-center d-flex search-field w-100">
+                            @* <div class="svg-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                            </svg>
+                        </div> *@
+                            <!-- start input -->
+                            <input type="text" name="s" class="form-control search-input border-bottom-0" placeholder="Nhập số điện thoại, link website, fanpage, ..." />
+                            <!-- end /. input -->
+                        </div>
+                        <button type="submit" class="btn btn-primary rounded-5 mt-3 mt-md-0"><i class="far fa-search"></i></button>
+                    </div>
+                </form>
+                <!-- end /. search content -->
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- start categories features -->
+<div class="position-relative z-1 header-categories">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-12">
+                <div class="row g-2 g-sm-4 justify-content-center">
+
+                    <!-- Card 1 -->
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <article class="categories-service-card h-100">
+                            <!-- Top image box -->
+                            <div class="categories-service-card__thumb">
+                                <img src="~/images/home/service1.png" alt="Xác minh tổ chức" height="120" />
+                            </div>
+                            <!-- Text content -->
+                            <div class="categories-service-card__body">
+                                <h3 class="categories-service-card__title">Xác Minh Tổ Chức</h3>
+                                <p class="categories-service-card__desc">
+                                    Là xác minh các thông tin của một tổ chức đã được DAILYVE
+                                    xác thực: Tên Doanh Nghiệp, Mã số thuế, Địa chỉ, Thông Tin
+                                    Liên Hệ
+                                </p>
+                            </div>
+
+                            <!-- Footer link -->
+                            <div class="categories-service-card__footer">
+                                <a href="#">XEM CHI TIẾT</a>
+                            </div>
+                        </article>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <article class="categories-service-card h-100">
+                            <div class="categories-service-card__thumb">
+                                <img src="~/images/home/service2.png" alt="Xác minh website" height="120" />
+                            </div>
+                            <div class="categories-service-card__body">
+                                <h3 class="categories-service-card__title">Xác Minh Website</h3>
+                                <p class="categories-service-card__desc">
+                                    Chứng nhận xác minh cho các Website chính chủ doanh nghiệp,
+                                    giúp nhận biết nhanh, chính xác các trang Web an toàn, tin
+                                    cậy khi tìm kiếm
+                                </p>
+                            </div>
+                            <div class="categories-service-card__footer">
+                                <a href="#">XEM CHI TIẾT</a>
+                            </div>
+                        </article>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <article class="categories-service-card h-100">
+                            <div class="categories-service-card__thumb">
+                                <img src="~/images/home/service3.png" alt="Xác minh MXH" height="120" />
+                            </div>
+                            <div class="categories-service-card__body">
+                                <h3 class="categories-service-card__title">Xác Minh Mạng Xã Hội</h3>
+                                <p class="categories-service-card__desc">
+                                    Là xác minh cho các Trang Mạng Xã Hội chính thức như
+                                    Facebook, Instagram, Tiktok,… giúp nhận biết được các trang
+                                    mạng xã hội của doanh nghiệp và hạn chế các trang mạo danh
+                                    của tổ chức
+                                </p>
+                            </div>
+                            <div class="categories-service-card__footer">
+                                <a href="#">XEM CHI TIẾT</a>
+                            </div>
+                        </article>
+                    </div>
+
+                    <!-- Card 4 -->
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <article class="categories-service-card h-100">
+                            <div class="categories-service-card__thumb">
+                                <img src="~/images/home/service4.png" alt="Xác minh liên hệ" height="120" />
+                            </div>
+                            <div class="categories-service-card__body">
+                                <h3 class="categories-service-card__title">Xác Minh Thông Tin Liên Hệ</h3>
+                                <p class="categories-service-card__desc">
+                                    Là xác minh các thông tin liên hệ chính thức của tổ chức ,
+                                    hướng tới một hệ sinh thái uy tín, an toàn, tin cậy cho mọi
+                                    đối tượng trên không gian mạng
+                                </p>
+                            </div>
+                            <div class="categories-service-card__footer">
+                                <a href="#">XEM CHI TIẾT</a>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- end /. categories features -->
+<!-- start contact -->
+<div class="contact-section">
+    <div class="container py-5">
+        <div class="row contact-container shadow" data-aos="fade-down">
+            <!-- Left -->
+            <div class="col-lg-5 contact-left d-flex flex-column justify-content-center">
+                <h2>Chung tay với<br />chúng tôi</h2>
+                <img src="~/theme/images/contact/image-contact.png" alt="Minh họa" class="contact-image mt-4" />
+            </div>
+
+            <!-- Right -->
+            <div class="col-lg-7 bg-transparent d-flex justify-content-center align-items-center">
+                <form class="col-lg-10" method="post">
+                    <div class="row mb-3">
+                        <div class="col-md-6">
+                            <label class="form-label">Tên</label>
+                            <input type="text" class="form-control search-input" />
+                        </div>
+                        <div class="col-md-6">
+                            <label class="form-label">Địa chỉ</label>
+                            <input type="text" class="form-control search-input" />
+                        </div>
+                    </div>
+
+                    <div class="row mb-3">
+                        <div class="col-md-6">
+                            <label class="form-label">Số điện thoại</label>
+                            <input type="text" class="form-control search-input" />
+                        </div>
+                        <div class="col-md-6">
+                            <label class="form-label">E-mail</label>
+                            <input type="email" class="form-control search-input" />
+                        </div>
+                    </div>
+
+                    <div class="mb-4">
+                        <label class="form-label">Nội dung</label>
+                        <textarea rows="3" class="form-control search-input" rows="2"></textarea>
+                    </div>
+
+                    <div class="text-end mb-3">
+                        <button type="submit" class="btn btn-submit">Gửi</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- end /. contact -->
+<!-- start ecosystem verify -->
+<div class="ecosystem-section mb-3 mx-3 rounded-4">
+    <div class="container py-4">
+        <div class="row justify-content-center">
+            <div class="col-sm-12 col-md-12 col-lg-10">
+                <div class="section-header text-center mb-5" data-aos="fade-down">
+                    <h3 class="display-6 fw-semibold mb-3 text-dark text-center">Giá trị sinh thái Verify.vn</h3>
+                    <div class="sub-title fs-14 text-dark text-center">Verify.vn là tập hợp các dịch vụ cung cấp các giải pháp toàn diện cho doanh nghiệp trong việc xây dựng và phát triển thương hiệu số, tối ưu hóa quy trình quản lý doanh nghiệp trên không gian mạng, bảo vệ thương hiệu và tài sản số, tăng cường niềm tin và uy tín của doanh nghiệp trên không gian mạng.</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row justify-content-center g-5">
+            <div class="col-6 col-md-3 text-center" data-aos="fade" data-aos-delay="300">
+                <img src="~/theme/images/ecosystem/ecosystem-1.png" alt="Nâng Lực" class="img-fluid">
+                <div class="">
+                    <h5 class="ecosystem-item-title">Năng Lực</h5>
+                    <div class="ecosystem-item-subtitle">Verify.vn được xây dựng bởi đội ngũ có năng lực chuyên môn cao, giàu kinh nghiệm trong lĩnh vực ATTT</div>
+                </div>
+            </div>
+            <div class="col-6 col-md-3 text-center" data-aos="fade" data-aos-delay="400">
+                <img src="~/theme/images/ecosystem/ecosystem-2.png" alt="Cam Kết" class="img-fluid">
+                <div class="">
+                    <h5 class="ecosystem-item-title">Cam Kết</h5>
+                    <div class="ecosystem-item-subtitle">Verify.vn cam kết tạo nên sự an toàn cho người dùng mạng, bảo vệ người dùng mạng trước các nguy cơ về ATTT.</div>
+                </div>
+            </div>
+            <div class="col-6 col-md-3 text-center" data-aos="fade" data-aos-delay="500">
+                <img src="~/theme/images/ecosystem/ecosystem-3.png" alt="Sứ Mệnh" class="img-fluid">
+                <div class="">
+                    <h5 class="ecosystem-item-title">Sứ Mệnh</h5>
+                    <div class="ecosystem-item-subtitle">Verify.vn được xây dựng với sứ mệnh xây dựng không gian mạng Việt Nam an toàn và lành mạnh.</div>
+                </div>
+            </div>
+            <div class="col-6 col-md-3 text-center" data-aos="fade" data-aos-delay="600">
+                <img src="~/theme/images/ecosystem/ecosystem-4.png" alt="Chia Sẻ" class="img-fluid">
+                <div class="">
+                    <h5 class="ecosystem-item-title">Chia Sẻ</h5>
+                    <div class="ecosystem-item-subtitle">Verify.vn chia sẻ những nguy cơ về ATTT của người dùng trên không gian mạng, cùng nhau xây dựng nên một không gian mạng tín nhiệm.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- end /. ecosystem verify -->
+<!-- start why-choose-us -->
+<div class="why-choose-us-section">
+    <div class="container py-4">
+        <div class="row justify-content-center mb-4">
+            <div class="col-sm-12 col-md-12 col-lg-10">
+                <div class="section-header text-center mb-5" data-aos="fade-down">
+                    <h3 class="display-6 fw-semibold mb-3 text-dark text-center">Vì sao chọn chúng tôi?</h3>
+                    <div class="sub-title fs-14 text-dark text-center">Chúng tôi không chỉ cung cấp công cụ xác minh doanh nghiệp mà còn giúp bạn xây dựng niềm tin với khách hàng, đối tác và nhà đầu tư. Với hệ thống dữ liệu chính xác, giao diện dễ sử dụng và cập nhật liên tục, chúng tôi giúp bạn tiết kiệm thời gian, tăng độ uy tín và mở rộng cơ hội phát triển kinh doanh.</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="why-choose-us-list row justify-content-center g-4">
+            <div class="col-12 col-md-6 col-lg-3" data-aos="fade" data-aos-delay="300">
+                <div class="why-choose-item h-100">
+                    <h3 class="text-danger">50%</h3>
+                    <h5 class="mt-3">Ngăn chặn rủi ro</h5>
+                    <p class="text-muted">Giảm thiểu 50% tỷ lệ rủi ro phát sinh trên không gian mạng.</p>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3" data-aos="fade" data-aos-delay="400">
+                <div class="why-choose-item h-100">
+                    <h3 class="text-danger">70%</h3>
+                    <h5 class="mt-3">Tăng độ uy tín</h5>
+                    <p class="text-muted">Gia tăng 70% mức độ tin tưởng trong mối quan hệ với khách hàng và đối tác.</p>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3" data-aos="fade" data-aos-delay="500">
+                <div class="why-choose-item h-100">
+                    <h3 class="text-danger">100%</h3>
+                    <h5 class="mt-3">Đồng hành xây dựng</h5>
+                    <p class="text-muted">Góp phần xây dựng môi trường kinh doanh minh bạch và lành mạnh trên không gian mạng.</p>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3" data-aos="fade" data-aos-delay="600">
+                <div class="why-choose-item h-100">
+                    <h3 class="text-danger">100%</h3>
+                    <h5 class="mt-3">Tạo sự tin tưởng khách hàng</h5>
+                    <p class="text-muted">Khách hàng yên tâm hơn khi lựa chọn và đồng hành cùng các doanh nghiệp nhờ vào các giải pháp bảo mật.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- end /. why-choose-us -->
+<!-- start review -->
+<div class="review-section py-5">
+    <div class="container py-5">
+        <div class="row align-items-center justify-content-between g-5">
+            <div class="col-lg-5 col-12 col-md-5" data-aos="fade-down">
+                <h3 class="fw-bold">Khách hàng nói gì về chúng tôi?</h3>
+                <p>“Tôi đã có thể xác minh thông tin đối tác trong vài giây. Dịch vụ nhanh chóng, chính xác và giúp tôi yên tâm hơn khi hợp tác kinh doanh.”</p>
+                <p>“Từ khi sử dụng hệ thống này, tỷ lệ rủi ro giảm rõ rệt, khách hàng cũng tin tưởng hơn. Một công cụ không thể thiếu với doanh nghiệp nhỏ như tôi.”</p>
+                <div class="d-flex gap-4 mt-4">
+                    <div>
+                        <h5 class="fw-bold mb-0">10 triệu+</h5>
+                        <small>Người dùng hài lòng</small>
+                    </div>
+                    <div>
+                        <h5 class="fw-bold mb-0">4.88</h5>
+                        <small>Điểm đánh giá trung bình</small><br>
+                        <span class="text-warning">★★★★★</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-6 col-12 col-md-6" data-aos="fade-down">
+                <div class="review-carousel owl-carousel owl-theme owl-nav-bottom">
+
+                    <div class="p-4">
+                        <div class="d-flex align-items-center mb-5">
+                            <img src="~/theme/images/review/review1.png" alt="Selena Bùi" class="rounded-circle me-3">
+                            <div>
+                                <h6 class="mb-0 fw-bold">Selena Bùi</h6>
+                                <small>BOD, Dailyve Corp</small>
+                            </div>
+                            <div class="ms-auto" style="font-size: 6rem;">“</div>
+                        </div>
+                        <p class="">
+                            Chúng tôi sử dụng dịch vụ xác minh doanh nghiệp của Verify.vn trong mọi giao dịch B2B. Tốc độ kiểm tra cực nhanh, độ tin cậy cao và đội ngũ hỗ trợ rất chuyên nghiệp. Giờ đây, việc đánh giá đối tác mới trở nên dễ dàng và minh bạch hơn bao giờ hết.
+                        </p>
+                    </div>
+
+                    <div class="p-4">
+                        <div class="d-flex align-items-center mb-3">
+                            <img src="~/theme/images/review/review1.png" alt="Selena Bùi" class="rounded-circle me-3">
+                            <div>
+                                <h6 class="mb-0 fw-bold">Selena Bùi</h6>
+                                <small>BOD, Dailyve Corp</small>
+                            </div>
+                            <div class="ms-auto" style="font-size: 6rem;">“</div>
+                        </div>
+                        <p class="mb-4">
+                            Chúng tôi sử dụng dịch vụ xác minh doanh nghiệp của Verify.vn trong mọi giao dịch B2B. Tốc độ kiểm tra cực nhanh, độ tin cậy cao và đội ngũ hỗ trợ rất chuyên nghiệp. Giờ đây, việc đánh giá đối tác mới trở nên dễ dàng và minh bạch hơn bao giờ hết.
+                        </p>
+                    </div>
+
+                    <div class="p-4">
+                        <div class="d-flex align-items-center mb-3">
+                            <img src="~/theme/images/review/review1.png" alt="Selena Bùi" class="rounded-circle me-3">
+                            <div>
+                                <h6 class="mb-0 fw-bold">Selena Bùi</h6>
+                                <small>BOD, Dailyve Corp</small>
+                            </div>
+                            <div class="ms-auto" style="font-size: 6rem;">“</div>
+                        </div>
+                        <p class="mb-4">
+                            Chúng tôi sử dụng dịch vụ xác minh doanh nghiệp của Verify.vn trong mọi giao dịch B2B. Tốc độ kiểm tra cực nhanh, độ tin cậy cao và đội ngũ hỗ trợ rất chuyên nghiệp. Giờ đây, việc đánh giá đối tác mới trở nên dễ dàng và minh bạch hơn bao giờ hết.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- end /. review -->
+<!-- start customer -->
+<div class="customer-section py-5 bg-light">
+    <div class="container py-4">
+        <div class="row justify-content-center">
+            <div class="col-sm-10 col-md-10 col-lg-8">
+                <!-- start section header -->
+                <div class="section-header text-center mb-5" data-aos="fade-down">
+                    <!-- start description -->
+                    <div class="sub-title fs-16">Hàng ngàn doanh nghiệp hàng đầu thế giới tin tưởng sử dụng Verify.vn</div>
+                    <!-- end /. description -->
+                </div>
+                <!-- end /. section header -->
+            </div>
+        </div>
+        <div class="row align-items-center justify-content-center g-2 g-sm-3 g-md-4">
+            <div class="col-6 col-sm-4 col-lg-3 col-xxl-2">
+                <img src="~/theme/images/customer/customer-1.png" alt="" class="img-fluid">
+            </div>
+            <div class="col-6 col-sm-4 col-lg-3 col-xxl-2">
+                <img src="~/theme/images/customer/customer-2.png" alt="" class="img-fluid">
+            </div>
+            <div class="col-6 col-sm-4 col-lg-3 col-xxl-2">
+                <img src="~/theme/images/customer/customer-3.png" alt="" class="img-fluid">
+            </div>
+            <div class="col-6 col-sm-4 col-lg-3 col-xxl-2">
+                <img src="~/theme/images/customer/customer-4.png" alt="" class="img-fluid">
+            </div>
+            <div class="col-6 col-sm-4 col-lg-3 col-xxl-2">
+                <img src="~/theme/images/customer/customer-5.png" alt="" class="img-fluid">
+            </div>
+            <div class="col-6 col-sm-4 col-lg-3 col-xxl-2">
+                <img src="~/theme/images/customer/customer-6.png" alt="" class="img-fluid">
+            </div>
+        </div>
+    </div>
+</div>
+<!-- end /. customer -->
+<!-- start blog -->
+<div class="blog-section position-relative overflow-hidden bg-dark">
+    <div class="container py-4">
+        <div class="row justify-content-center">
+            <div class="col-sm-10 col-md-10 col-lg-8 col-xl-7">
+                <!-- start section header -->
+                <div class="section-header text-center mb-5" data-aos="fade-down">
+                    <!-- start title -->
+                    <h2 class="display-6 fw-semibold mb-4 section-header__title text-capitalize text-white">Tin tức về chúng tôi</h2>
+                    <!-- end /. title -->
+                    <!-- start description -->
+                    <div class="sub-title fs-16 text-white">Verify.vn đang được báo chí nhắc đến nhờ hỗ trợ doanh nghiệp xác minh đối tác nhanh chóng và an toàn hơn. Theo dõi những cập nhật và bài viết truyền thông mới nhất của chúng tôi tại đây.</div>
+                    <!-- end /. description -->
+                </div>
+                <!-- end /. section header -->
+            </div>
+        </div>
+
+        <div class="row g-4">
+
+            <!-- Ô LỚN BÊN TRÁI -->
+            <div class="col-lg-6 d-flex align-items-center justify-content-center">
+                <article class="news-card">
+                    <img src="~/theme/images/blog/verify/image 1.png" alt="" class="image-zoom-hover">
+                    <span class="overlay-gradient"></span>
+
+                    <a href="#" class="position-absolute top-0 start-0 w-100 h-100" aria-label="Xem chi tiết"></a>
+
+                    <div class="content">
+                        <h4 class="text-white fw-semibold mb-2 post-title">
+                            <a href="#!">Verify.vn được vinh danh bởi Bộ Thông tin & Truyền thông</a>
+
+                        </h4>
+                        <p class="small text-white">Verify.vn là nền tảng xác minh thông tin uy tín được Bộ Thông tin &amp; Truyền thông công nhận.</p>
+
+                        <div class="d-flex align-items-center gap-2 mt-3 small">
+                            <img src="~/theme/images/avatar/01.jpg" class="rounded-circle" width="32" height="32" alt="">
+                            <span class="text-white">Leo Võ</span>
+                            <div class="vertical-divider"></div>
+                            <span class="text-white">
+                                <i class="fa-solid fa-calendar me-2"></i>
+                                10 Apr 2023
+                            </span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <!-- CỘT PHẢI (3 BLOCK NHỎ) -->
+            <div class="col-lg-6 d-flex flex-column gap-4">
+
+                <!-- Ô TRÊN CÙNG -->
+                <article class="news-card">
+                    <img src="~/theme/images/blog/verify/image2.png" alt="" class="image-zoom-hover">
+                    <span class="overlay-gradient"></span>
+
+                    <a href="#" class="position-absolute top-0 start-0 w-100 h-100" aria-label="Xem chi tiết"></a>
+
+                    <div class="content">
+                        <h4 class="text-white fw-semibold mb-2 post-title">
+                            <a href="#!">Verify.vn được vinh danh tại Hội nghị Chuyển đổi số Quốc gia</a>
+                        </h4>
+
+                        <p class="small text-white">Được đánh giá cao về đóng góp minh bạch thông tin số và quản lý dữ liệu xác thực.</p>
+
+                        <div class="d-flex align-items-center gap-2 mt-3 small">
+                            <img src="~/theme/images/avatar/01.jpg" class="rounded-circle" width="32" height="32" alt="">
+                            <span class="text-white">Leo Võ</span>
+                            <span class="text-white">
+                                <i class="fa-solid fa-calendar  me-2"></i>
+                                10 Apr 2023
+                            </span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- DÒNG DƯỚI: 2 Ô CON -->
+                <div class="row g-4 flex-grow-1">
+                    <!-- Ô VIDEO -->
+                    <div class="col-md-6">
+                        <article class="news-card">
+                            <img src="~/theme/images/blog/verify/image3.png" alt="" class="image-zoom-hover">
+                            <span class="overlay-gradient"></span>
+
+                            <a href="#" class="position-absolute top-0 start-0 w-100 h-100" aria-label="Xem chi tiết"></a>
+
+                            <div class="content">
+                                <p class="small text-white">Khám phá hành trình Verify.vn trở thành nền tảng xác minh đáng tin cậy trong chuyển đổi số.</p>
+
+                                <div class="d-flex align-items-center gap-2 mt-3 small">
+                                    <img src="~/theme/images/avatar/01.jpg" class="rounded-circle" width="32" height="32" alt="">
+                                    <span class="text-white">Leo Võ</span>
+                                    <span class="text-white">
+                                        <i class="fa-solid fa-calendar"></i>
+                                        10 Apr 2023
+                                    </span>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+
+                    <!-- Ô THỐNG KÊ -->
+                    <div class="col-md-6">
+                        <div class="stat-card">
+                            <h3>300+</h3>
+                            <p class="fw-semibold mb-4">Tin tức</p>
+                            <p>Theo dõi hàng trăm tin tức chính thống và cập nhật mới nhất về xác minh số.</p>
+
+                            <a href="#" class="stat-card-btn">
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div><!-- /row con -->
+            </div><!-- /col-lg-6 phải -->
+
+        </div>
+    </div>
+</div>
+<!-- end /. blog -->
+
+@section Scripts {
+
+}
+﻿

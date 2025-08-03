@@ -1,0 +1,23 @@
+[
+  {
+    "Name": "New Profile",
+    "Projects": [
+      {
+        "Path": "BaseSource.BackendApi\\BaseSource.BackendApi.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "BaseSource.AdminApp\\BaseSource.AdminApp.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "BaseSource.WebApp\\BaseSource.WebApp.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "BaseSource.UploadApi\\BaseSource.UploadApi.csproj",
+        "Action": "Start"
+      }
+    ]
+  }
+]
